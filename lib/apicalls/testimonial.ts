@@ -73,13 +73,15 @@ async function fetchTestimonialsFromSupabase(
   const response = await fetch(
     `${supabaseUrl}/rest/v1/testimonials?tenant_id=eq.${TENANT_ID}&is_active=eq.true&order=display_order.asc`,
     {
-      cache: 'no-store',
       signal,
       headers: {
         apikey: apiKey,
         Authorization: `Bearer ${apiKey}`,
         Accept: 'application/json',
       },
+       next: {
+      revalidate: 300, // 5 minutes = 300 seconds
+    },
     }
   );
 

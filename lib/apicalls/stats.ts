@@ -108,7 +108,9 @@ async function fetchStatsFromSupabase(
       Authorization: `Bearer ${apiKey}`,
       Accept: 'application/json',
     },
-    cache: 'no-store',
+     next: {
+      revalidate: 300, // 5 minutes = 300 seconds
+    },
   });
 
   if (!response.ok) {
