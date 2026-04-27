@@ -12,7 +12,7 @@ import { Button } from "../ui/button";
 import { navigationLinks } from "@/config/navigation";
 import { usePathname } from "next/navigation";
 import { useScrollEffect } from "@/hooks/useScrollEffect";
-import Container from './../layouts/container';
+import Container from "./../layouts/container";
 
 export default function NavigationHeader() {
   const pathname = usePathname();
@@ -54,7 +54,10 @@ export default function NavigationHeader() {
           </nav>
 
           <div className="hidden md:flex row-auto items-center gap-4">
-        
+            <Button variant="outline" size="lg">
+              Join Our Team
+            </Button>
+
             <Button variant="default" size="lg">
               Contact
             </Button>

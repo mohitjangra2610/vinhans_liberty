@@ -12,8 +12,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "America Wealth Crop",
-  description: "Elevate Your Financial Future with America Wealth Crop - Your Trusted Partner in Personalized Wealth Management and Intelligent Investment Strategies for Sustainable Growth.",
+  title: "America Wealth Corp",
+  description: "Elevate Your Financial Future with America Wealth Corp - Your Trusted Partner in Personalized Wealth Management and Intelligent Investment Strategies for Sustainable Growth.",
 };
 
 export default function RootLayout({
