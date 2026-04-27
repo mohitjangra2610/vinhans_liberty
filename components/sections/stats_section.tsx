@@ -1,4 +1,4 @@
-import { getStats, type Stat } from "@/lib/apicalls/stats";
+import type { Stat } from "@/lib/apicalls/stats";
 import {
   FileText,
   Users,
@@ -27,36 +27,41 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   wallet: Wallet,
 };
 
-export default async function StatsSection() {
-  let stats: Stat[] = [];
-  let error: string | null = null;
+interface StatsSectionProps {
+  stats: Stat[];
+  loading: boolean;
+  error: string | null;
+}
 
-  try {
-    stats = await getStats();
-  } catch (err) {
-    const errorMessage = err instanceof Error ? err.message : "Failed to fetch stats";
-    error = errorMessage;
-    console.error("Error fetching stats in StatsSection:", errorMessage);
-  }
+export default function StatsSection({
+  stats,
+  loading,
+  error,
+}: StatsSectionProps) {
 
-  if (error) {
+  if (loading) {
     return (
       <section className="py-16 px-4">
-        <div className="mx-auto max-w-7xl">
-          <p className="text-sm text-red-600">Unable to load statistics. Please try again later.</p>
-          {process.env.NODE_ENV === "development" && (
-            <p className="text-xs text-red-500 mt-2">Debug: {error}</p>
-          )}
+        <div className="mx-auto max-w-7xl grid grid-cols-2 gap-4">
+          {Array.from({ length: 4 }).map((_, index) => (
+            <div key={index} className="p-4">
+              <div className="w-12 h-12 rounded-md bg-gray-200 animate-pulse" />
+              <div className="mt-3 h-5 w-16 rounded bg-gray-200 animate-pulse" />
+              <div className="mt-2 h-4 w-24 rounded bg-gray-200 animate-pulse" />
+            </div>
+          ))}
         </div>
       </section>
     );
   }
 
-  if (!stats || stats.length === 0) {
+  if (error || !stats || stats.length === 0) {
     return (
       <section className="py-16 px-4">
         <div className="mx-auto max-w-7xl">
-          <p className="text-sm text-gray-500">No stats available.</p>
+          <p className="text-sm text-gray-500">
+            {error ? "Unable to load statistics. Please try again later." : "No stats available."}
+          </p>
         </div>
       </section>
     );

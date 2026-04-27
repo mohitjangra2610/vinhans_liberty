@@ -1,8 +1,7 @@
 import Container from "@/components/layouts/container";
 import Testimonials from "@/components/sections/testimonials";
 
-import StatsHorizontal from "@/components/sections/StatsHorizontal";
-import StatsSection from "@/components/sections/stats_section";
+import Stats from "@/components/sections/stats";
 import QuoteButton from "@/components/ui/QuoteButton";
 import ScheduleCallButton from "@/components/ui/SheduleCall";
 
@@ -50,15 +49,7 @@ export default function Page() {
       {/* Stats Section */}
       <section className="w-full py-12 md:py-16 px-4 bg-gray-50">
         <Container>
-          {/* Desktop - Horizontal */}
-          <div className="hidden md:block">
-            <StatsHorizontal />
-          </div>
-
-          {/* Mobile - Grid */}
-          <div className="md:hidden">
-            <StatsSection />
-          </div>
+          <Stats />
         </Container>
       </section>
     </div>
