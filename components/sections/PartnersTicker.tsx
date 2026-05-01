@@ -31,7 +31,7 @@ export function PartnersTicker({
             <Link
               key={`${partner.id}-${index}`}
               href={`/partners/${partner.slug}`}
-              className="flex h-[230px] w-[180px] min-w-[180px] max-w-[180px] shrink-0 grow-0 flex-col overflow-hidden rounded-lg border border-[#EEF2F6] bg-white p-1 transition-all duration-300 hover:shadow-md sm:h-[250px] sm:w-[208px] sm:min-w-[208px] sm:max-w-[208px]"
+              className="flex h-57.5 w-45 min-w-45 max-w-45 shrink-0 grow-0 flex-col overflow-hidden rounded-lg border border-[#EEF2F6] bg-white p-1 transition-all duration-300 hover:shadow-md sm:h-62.5 sm:w-52 sm:min-w-52 sm:max-w-52"
             >
               <div className="flex h-20 items-center justify-center rounded-md bg-slate-100 px-4 sm:h-24">
                 <Image
