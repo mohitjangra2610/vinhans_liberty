@@ -43,7 +43,7 @@ export default function MobileMenu({
       <DrawerContent>
         {/* Header */}
         <DrawerHeader className="flex items-center justify-between">
-          <div className=" w- w-full flex row-auto items-center justify-between ">
+          <div className="w-full flex items-center justify-between">
             <DrawerTitle> Mohit Jangra</DrawerTitle>
             <DrawerClose asChild>
               <button className="p-2" aria-label="Close menu">

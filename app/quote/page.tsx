@@ -1,14 +1,12 @@
 "use client";
 
+import LeadForm from "@/components/forms/LeadForm";
+
 export default function Quote() {
   return (
-    <div className="w-full h-screen overflow-hidden">
-      <iframe
-        src="https://leadautomationusa.vercel.app/?client=americanwealth"
-        className="w-full h-full border-0"
-        title="Embedded App"
-        allowFullScreen
-      />
+    <div>
+    <LeadForm />
+
     </div>
   );
 }

@@ -14,7 +14,7 @@ function Stars({ rating }: Readonly<{ rating: number }>) {
   return (
     <div className="flex gap-1" aria-label={`${safeRating} star rating`}>
       {Array.from({ length: 5 }).map((_, index) => (
-        <span key={index} className="text-lg text-yellow-500">
+        <span key={`star-${index}`} className="text-lg text-yellow-500">
           {index < safeRating ? '★' : '☆'}
         </span>
       ))}

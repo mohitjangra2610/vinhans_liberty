@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Partners() {
   return (
     <main>
-      <section className="flex min-h-55 w-full items-center justify-center bg-linear-60 from-yellow-50 via-blue-50 to-red-50 px-4 py-10 text-center sm:min-h-[260px] sm:px-6 lg:px-8">
+      <section className="flex min-h-55 w-full items-center justify-center bg-linear-60 from-yellow-50 via-blue-50 to-red-50 px-4 py-10 text-center sm:min-h-65 sm:px-6 lg:px-8">
         <Container>
           <div className="mx-auto flex h-full w-full max-w-3xl flex-col items-center justify-center gap-4">
             <h1 className="text-xl font-bold leading-tight text-gray-900 sm:text-2xl md:text-2xl">

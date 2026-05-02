@@ -29,7 +29,7 @@ export function PartnersGrid({
       <Link
         key={partner.id}
         href={`/partners/${partner.slug}`}
-        className="flex min-h-65 flex-col justify-between rounded-lg border border-[#CBD5E1] bg-white p-4 shadow-sm transition-shadow duration-300 hover:shadow-md sm:min-h-[300px]"
+        className="flex min-h-65 flex-col justify-between rounded-lg border border-gray-200 bg-gray-25 p-4 shadow-sm transition-shadow duration-300 hover:shadow-md sm:min-h-75"
       >
         <div>
           <h3 className="line-clamp-2 text-sm font-bold leading-5 text-black sm:text-base sm:leading-6">

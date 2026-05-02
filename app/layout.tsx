@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import NavigationHeader from "@/components/sections/navigation_header";
 import MobileMenuButton from "@/components/ui/MobileMenuButton";
-import Services from "./services/page";
 import { Footer } from "@/components/layouts/Footer";
 
 const inter = Inter({

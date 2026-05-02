@@ -6,7 +6,6 @@ export default function QuoteButton() {
   const router = useRouter();
 
   const handleClick = () => {
-    console.log('Button clicked!');
     router.push('/quote');
   };
 

@@ -1,8 +1,8 @@
 import { getServices } from "@/lib/apicalls/services";
-import { ServicesGrid } from "./ServicesGrid";
+import { ServicesPageGrid } from "./ServicesPageGrid";
 
 
-export async function ServicesUI() {
+export async function ServicesPageUI() {
   const services = await getServices({
     source: "server",
   });
@@ -10,5 +10,5 @@ export async function ServicesUI() {
     return null;
   }
 
-  return <ServicesGrid initialServices={services} />;
+  return <ServicesPageGrid initialServices={services} />;
 }

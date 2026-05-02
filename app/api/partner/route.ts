@@ -4,7 +4,6 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
   try {
-        console.log("API /partners called");
     const partners = await getPartners({
       source: "server",
     });
