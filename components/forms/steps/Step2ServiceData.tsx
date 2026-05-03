@@ -52,7 +52,7 @@ export default function Step2ServiceData({
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900">{service.name}</h2>
+        <h2 className="text-2xl font-bold text-gray-800">{service.name}</h2>
         <p className="text-sm text-gray-500 mt-1">
           Please provide details for your selected service.
         </p>

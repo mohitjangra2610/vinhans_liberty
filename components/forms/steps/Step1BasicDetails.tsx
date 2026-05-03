@@ -35,7 +35,7 @@ export default function Step1BasicDetails({
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
       <div>
-        <h2 className="text-2xl font-bold text-gray-900">Basic Details</h2>
+        <h2 className="text-2xl font-bold text-gray-800">Basic Details</h2>
         <p className="text-sm text-gray-500 mt-1">Tell us about yourself and select a service.</p>
       </div>
 
@@ -131,8 +131,8 @@ export default function Step1BasicDetails({
               onClick={() => setSelectedService(service)}
               className={`text-left p-4 rounded-xl border-2 transition-all
                 ${selectedService?.id === service.id
-                  ? "border-[#0a1628] bg-[#0a1628] text-white"
-                  : "border-[#EAECF0] bg-white text-gray-900 hover:border-[#0a1628]"
+                  ? "border-blue-600 bg-blue-600 text-white"
+                  : "border-gray-300 bg-white text-gray-900 hover:border-blue-300"
                 }`}
             >
               <p className={`text-sm font-semibold ${selectedService?.id === service.id ? "text-white" : "text-gray-900"}`}>

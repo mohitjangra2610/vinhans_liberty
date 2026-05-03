@@ -177,8 +177,8 @@ export default function LeadForm() {
         {[1, 2, 3].map((s) => (
           <div key={s} className="flex items-center gap-2 flex-1">
             <div
-              className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold border-2 transition-all
-              ${step === s ? "bg-[#0a1628] text-white border-[#0a1628]" : ""}
+              className={`w-6 h-6 rounded-full flex items-center justify-center text-sm font-semibold border-2 transition-all
+              ${step === s ? "bg-blue-600 text-white border-blue-600" : ""}
               ${step > s ? "bg-[#c9a84c] text-white border-[#c9a84c]" : ""}
               ${step < s ? "bg-white text-gray-400 border-gray-200" : ""}
             `}

@@ -15,6 +15,7 @@ import { usePathname } from "next/navigation";
 
 import { Button } from "@/components/ui/button";
 import { mobileNavigationLinks } from "@/config/navigation";
+import { useRouter } from "next/navigation";
 
 interface MobileMenuProps {
   open: boolean;
@@ -26,6 +27,7 @@ export default function MobileMenu({
   onClose,
 }: Readonly<MobileMenuProps>) {
   const pathname = usePathname();
+  const router = useRouter();
 
   useEffect(() => {
     if (open) {
@@ -37,6 +39,16 @@ export default function MobileMenu({
       document.body.style.overflow = "";
     };
   }, [open]);
+
+  const handleContactClick = () => {
+      onClose();
+    router.push("/contact");
+  };
+
+  const handleJoinTeamClick = () => {
+      onClose();
+    router.push("/#join-team");
+  };
 
   return (
     <Drawer open={open} onOpenChange={onClose}>
@@ -75,14 +87,24 @@ export default function MobileMenu({
           })}
         </nav>
         <DrawerFooter className="px-4 space-y-1 pb-8">
-          <Button className="w-full" variant="default" size="lg">
+          <Button
+            className="w-full"
+            variant="default"
+            size="lg"
+            onClick={handleContactClick}
+          >
             Contact
           </Button>
-          <Button className="w-full" variant="outline" size="lg">
+          <Button
+            className="w-full"
+            variant="outline"
+            size="lg"
+            onClick={handleJoinTeamClick}
+          >
             Join Our Team
           </Button>
         </DrawerFooter>
-      </DrawerContent>  
+      </DrawerContent>
     </Drawer>
   );
 }

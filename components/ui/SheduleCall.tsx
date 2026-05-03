@@ -1,16 +1,21 @@
-'use client';
+"use client";
 
-import { useRouter } from 'next/navigation';
+import { Button } from "./button";
+import { useRouter } from "next/navigation";
 
 export default function ScheduleCallButton() {
   const router = useRouter();
+  const handleClick = () => {
+    router.push('/contact');
+  };
 
   return (
-    <button 
-      onClick={() => router.push("/contact")}
-     className="px-6 py-3 bg-gray-300 text-gray-800 rounded-md hover:bg-gray-400 transition duration-300"
+    <Button
+      variant="outline"
+      size="lg"
+      onClick={handleClick}
     >
       Schedule a Call
-    </button>
+    </Button>
   );
 }
