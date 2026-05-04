@@ -94,7 +94,7 @@ export default function Contact() {
 
       <section className="h-screen w-full">
         <iframe
-          src="https://calendly.com/sonu-website26/30min"
+          src="https://calendly.com/buildwealthwithpk/fna"
           className="h-full w-full border-0"
           title="Calendly booking"
           allowFullScreen

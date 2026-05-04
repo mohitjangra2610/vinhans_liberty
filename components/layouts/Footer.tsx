@@ -47,7 +47,7 @@ export function Footer() {
             href="mailto:info@amaricanwealthcrop.com"
             className="text-xs text-white/80 transition hover:text-white"
           >
-            info@amaricanwealthcrop.com
+            empowerme@americanwealthcorp.com
           </a>
         </div>
 
