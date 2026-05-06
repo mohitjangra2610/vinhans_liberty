@@ -21,7 +21,7 @@ export function Footer() {
               alt="logo"
               width={130}
               height={60}
-              className="w-28 md:w-32 h-auto"
+              className="w-28 md:w-42 h-auto"
             />
             <Link href="/" className="text-sm font-semibold">
               American Wealth

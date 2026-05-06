@@ -29,9 +29,9 @@ export default function NavigationHeader() {
           <Image
             src="/aws_logo.svg"
             alt="logo"
-            width={130}
-            height={60}
-            className="w-28 md:w-32 h-auto"
+            width={160}
+            height={80}
+            className="w-auto md:w-48 h-auto"
           />
         </Link>
         <nav className="hidden md:flex">
