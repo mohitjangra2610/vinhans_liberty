@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import { AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 type Props = {
@@ -149,14 +150,14 @@ export default function OtpModal({ email, token, setToken, onVerified, onClose }
 
           {/* Icon */}
           <div className="w-12 h-12 rounded-2xl bg-gold/20 flex items-center justify-center mb-4">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" strokeWidth="2">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="text-gold" strokeWidth="2">
               <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
               <path d="M7 11V7a5 5 0 0 1 10 0v4" />
             </svg>
           </div>
 
           <h2 className="text-xl font-bold text-white">Verify Your Email</h2>
-          <p className="text-sm text-gray-400 mt-1 leading-relaxed">
+          <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
             We sent a 6-digit code to{" "}
             <span className="text-gold font-medium">{email}</span>
           </p>
@@ -178,8 +179,8 @@ export default function OtpModal({ email, token, setToken, onVerified, onClose }
                 onChange={(e) => handleChange(i, e.target.value)}
                 onKeyDown={(e) => handleKeyDown(i, e)}
                 className={`w-11 h-14 text-center text-xl font-bold rounded-xl border-2 outline-none transition-all
-                  ${digit ? "border-ink bg-ink/5 text-ink" : "border-border-muted text-gray-900"}
-                  ${error ? "border-red-400 bg-red-50" : ""}
+                  ${digit ? "border-ink bg-ink/5 text-ink" : "border-border-muted text-foreground"}
+                  ${error ? "border-destructive bg-destructive/10" : ""}
                   focus:border-gold focus:ring-2 focus:ring-gold/20
                 `}
               />
@@ -189,12 +190,8 @@ export default function OtpModal({ email, token, setToken, onVerified, onClose }
           {/* Error */}
           {error && (
             <div className="flex items-center gap-2 rounded-xl bg-red-50 border border-red-100 px-4 py-3">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ef4444" strokeWidth="2" className="shrink-0">
-                <circle cx="12" cy="12" r="10" />
-                <line x1="12" y1="8" x2="12" y2="12" />
-                <line x1="12" y1="16" x2="12.01" y2="16" />
-              </svg>
-              <p className="text-sm text-red-600">{error}</p>
+              <AlertCircle className="h-4 w-4 shrink-0 text-destructive" />
+              <p className="text-sm text-destructive">{error}</p>
             </div>
           )}
 

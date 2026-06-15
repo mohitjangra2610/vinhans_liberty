@@ -52,8 +52,8 @@ export default function Step2ServiceData({
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
       <div>
-        <h2 className="text-2xl font-bold text-gray-800">{service.name}</h2>
-        <p className="text-sm text-gray-500 mt-1">
+        <h2 className="text-2xl font-bold text-foreground">{service.name}</h2>
+        <p className="text-sm text-muted-foreground mt-1">
           Please provide details for your selected service.
         </p>
       </div>
@@ -65,7 +65,7 @@ export default function Step2ServiceData({
               <FieldLabel htmlFor={field.field_key}>
                 {field.label}
                 {!field.is_required && (
-                  <span className="text-gray-400 font-normal ml-1">(optional)</span>
+                  <span className="text-muted-foreground font-normal ml-1">(optional)</span>
                 )}
               </FieldLabel>
               <Input
@@ -85,7 +85,7 @@ export default function Step2ServiceData({
               <FieldLabel htmlFor={field.field_key}>
                 {field.label}
                 {field.field_key === "investment_timeline" && (
-                  <span className="text-gray-400 font-normal ml-1">(1-20 years)</span>
+                  <span className="text-muted-foreground font-normal ml-1">(1-20 years)</span>
                 )}
               </FieldLabel>
               <Input
@@ -110,7 +110,7 @@ export default function Step2ServiceData({
                 id={field.field_key}
                 value={(serviceData[field.field_key] as string) || ""}
                 onChange={(e) => handleChange(field.field_key, e.target.value)}
-                className="w-full h-10 rounded-md border border-border px-3 text-sm text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none"
+                className="w-full h-10 rounded-md border border-border px-3 text-sm text-foreground focus:border-primary focus:ring-2 focus:ring-primary/10 outline-none"
               >
                 <option value="">Select an option</option>
                 {field.options.map((opt) => (
@@ -190,7 +190,7 @@ function ChildrenListField({
             className="border border-border-muted rounded-xl p-4 space-y-3"
           >
             <div className="flex items-center justify-between">
-              <p className="text-sm font-medium text-gray-700">Child {i + 1}</p>
+              <p className="text-sm font-medium text-muted-foreground">Child {i + 1}</p>
               <button
                 type="button"
                 onClick={() => removeChild(i)}
@@ -225,7 +225,7 @@ function ChildrenListField({
                   id={`${fieldKey}_gender_${i}`}
                   value={child.gender}
                   onChange={(e) => updateChild(i, "gender", e.target.value)}
-                  className="w-full h-10 rounded-md border border-border px-3 text-sm text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none"
+                  className="w-full h-10 rounded-md border border-border px-3 text-sm text-foreground focus:border-primary focus:ring-2 focus:ring-primary/10 outline-none"
                 >
                   <option value="">Gender</option>
                   <option value="Male">Male</option>
@@ -240,7 +240,7 @@ function ChildrenListField({
         <button
           type="button"
           onClick={addChild}
-          className="w-full py-3 border-2 border-dashed border-border-muted rounded-xl text-sm text-gray-500 hover:border-ink hover:text-ink transition-all"
+          className="w-full py-3 border-2 border-dashed border-border-muted rounded-xl text-sm text-muted-foreground hover:border-ink hover:text-ink transition-all"
         >
           + Add Child
         </button>

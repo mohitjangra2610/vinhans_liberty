@@ -85,7 +85,7 @@ export function EventsPageList({
                 onClick={() => setSelectedFilter(filter)}
                 className={`rounded-full px-4 py-2 text-sm font-medium capitalize transition ${
                   selectedFilter === filter
-                    ? "bg-blue-700 text-white"
+                    ? "bg-primary text-primary-foreground hover:bg-primary-hover"
                     : "bg-muted text-text-dim hover:bg-muted"
                 }`}
               >
@@ -103,7 +103,7 @@ export function EventsPageList({
               <Link
                 key={event.id}
                 href={`/events/${event.slug}`}
-                className="grid gap-4 rounded-xl border border-border bg-white p-4 transition-all duration-300 hover:border-blue-200 hover:shadow-md sm:grid-cols-[150px_180px_1fr_auto] sm:items-center sm:p-5"
+                className="grid gap-4 rounded-xl border border-border bg-white p-4 transition-all duration-300 hover:border-primary/20 hover:shadow-md sm:grid-cols-[150px_180px_1fr_auto] sm:items-center sm:p-5"
               >
                 <div className="relative h-[120px] w-full overflow-hidden rounded-lg bg-muted sm:h-[90px] sm:w-[150px]">
                   <Image
@@ -143,7 +143,7 @@ export function EventsPageList({
                   </div>
                 </div>
 
-                <div className="inline-flex items-center gap-2 text-sm font-bold text-blue-700 sm:justify-end">
+                <div className="inline-flex items-center gap-2 text-sm font-bold text-primary sm:justify-end">
                   Register for Event
                   <ArrowRight className="h-5 w-5" />
                 </div>

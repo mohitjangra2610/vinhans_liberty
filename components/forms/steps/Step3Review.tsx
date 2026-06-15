@@ -106,16 +106,16 @@ export default function Step3Review({
   return (
     <div className="space-y-6">
       <div>
-        <h2 className="text-2xl font-bold text-gray-800">Review Your Details</h2>
+        <h2 className="text-2xl font-bold text-foreground">Review Your Details</h2>
         <p className="text-sm text-muted-foreground mt-1">
           Please review everything carefully before submitting. You can edit any section.
         </p>
       </div>
 
       {/* Selected Service Banner */}
-      <div className="flex items-center gap-3 rounded-2xl bg-blue-600 px-5 py-4">
-        <div className="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center shrink-0">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" strokeWidth="2">
+      <div className="flex items-center gap-3 rounded-2xl bg-primary px-5 py-4">
+        <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shrink-0">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="text-gold" strokeWidth="2">
             <polyline points="9 11 12 14 22 4" />
             <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
           </svg>
@@ -157,23 +157,23 @@ export default function Step3Review({
 
       {/* Error */}
       {submitError && (
-        <div className="flex items-start gap-3 rounded-xl bg-red-50 border border-red-100 px-4 py-3">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ef4444" strokeWidth="2" className="shrink-0 mt-0.5">
+        <div className="flex items-start gap-3 rounded-xl bg-destructive/10 border border-destructive/20 px-4 py-3">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="shrink-0 mt-0.5 text-destructive">
             <circle cx="12" cy="12" r="10" />
             <line x1="12" y1="8" x2="12" y2="12" />
             <line x1="12" y1="16" x2="12.01" y2="16" />
           </svg>
-          <p className="text-sm text-red-600">{submitError}</p>
+          <p className="text-sm text-destructive">{submitError}</p>
         </div>
       )}
 
       {/* OTP Note */}
-      <div className="flex items-start gap-3 rounded-xl bg-[#FFFAEB] border border-[#FEF0C7] px-4 py-3">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F79009" strokeWidth="2" className="shrink-0 mt-0.5">
+      <div className="flex items-start gap-3 rounded-xl bg-warning-bg border border-warning-border px-4 py-3">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="shrink-0 mt-0.5 text-warning">
           <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
           <path d="M7 11V7a5 5 0 0 1 10 0v4" />
         </svg>
-        <p className="text-xs text-[#B54708] leading-relaxed">
+        <p className="text-xs text-warning-text leading-relaxed">
           Clicking <strong>Submit</strong> will send a verification OTP to{" "}
           <strong>{basicForm.email}</strong>. Your request will be submitted after successful verification.
         </p>

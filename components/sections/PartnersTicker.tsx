@@ -33,7 +33,7 @@ export function PartnersTicker({
               href={`/partners/${partner.slug}`}
               className="flex h-57.5 w-45 min-w-45 max-w-45 shrink-0 grow-0 flex-col overflow-hidden rounded-lg border border-border bg-white p-1 transition-all duration-300 hover:shadow-md sm:h-62.5 sm:w-52 sm:min-w-52 sm:max-w-52"
             >
-              <div className="flex h-20 items-center justify-center rounded-md bg-slate-100 px-4 sm:h-24">
+              <div className="flex h-20 items-center justify-center rounded-md bg-muted px-4 sm:h-24">
                 <Image
                   src={partner.logo_url}
                   alt={partner.company_name}

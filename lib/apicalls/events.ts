@@ -1,5 +1,6 @@
-import { fetchFromAPI } from "../api-client";
-import { getMemoryCachedData } from "../cache/memory-cache";
+import { fetchFromAPI } from "@/lib/api-client";
+import { getMemoryCachedData } from "@/lib/cache/memory-cache";
+import { DataSource, DataSourceType } from "@/lib/constants/enums";
 import type {
   EventAddress,
   EventGallery,
@@ -20,7 +21,7 @@ type EventPayload = Partial<EventItem> & {
 
 interface GetEventsOptions {
   signal?: AbortSignal;
-  source?: "auto" | "client" | "server";
+  source?: DataSourceType;
 }
 
 const TENANT_ID = process.env.NEXT_PUBLIC_TENANT_ID;
@@ -130,10 +131,12 @@ function normalizeEvent(event: EventPayload): EventItem | null {
   };
 }
 
+const EVENTS_CACHE_TTL = 300;
+
 export async function fetchEventsFromSupabase(): Promise<EventPayload[]> {
   return getMemoryCachedData<EventPayload[]>(
     `events:${TENANT_ID}`,
-    0,
+    EVENTS_CACHE_TTL,
     () => fetchEventsFromSupabaseProxy()
   );
 }
@@ -181,8 +184,8 @@ export async function getEvents(
   options: GetEventsOptions = {}
 ): Promise<EventItem[]> {
   const shouldUseServerSource =
-    options.source === "server" ||
-    (options.source !== "client" && typeof globalThis.window === "undefined");
+    options.source === DataSource.SERVER ||
+    (options.source !== DataSource.CLIENT && typeof globalThis.window === "undefined");
 
   const data = shouldUseServerSource
     ? await fetchEventsFromSupabase()

@@ -35,8 +35,8 @@ export default function Step1BasicDetails({
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
       <div>
-        <h2 className="text-2xl font-bold text-gray-800">Basic Details</h2>
-        <p className="text-sm text-gray-500 mt-1">Tell us about yourself and select a service.</p>
+        <h2 className="text-2xl font-bold text-foreground">Basic Details</h2>
+        <p className="text-sm text-muted-foreground mt-1">Tell us about yourself and select a service.</p>
       </div>
 
       <div className="grid grid-cols-2 gap-4">
@@ -109,7 +109,7 @@ export default function Step1BasicDetails({
             value={form.gender}
             onChange={handleChange}
             required
-            className="w-full h-10 rounded-md border border-border px-3 text-sm text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none"
+            className="w-full h-10 rounded-md border border-border px-3 text-sm text-foreground focus:border-primary focus:ring-2 focus:ring-primary/10 outline-none"
           >
             <option value="">Select gender</option>
             <option value="Male">Male</option>
@@ -131,15 +131,15 @@ export default function Step1BasicDetails({
               onClick={() => setSelectedService(service)}
               className={`text-left p-4 rounded-xl border-2 transition-all
                 ${selectedService?.id === service.id
-                  ? "border-blue-600 bg-blue-600 text-white"
-                  : "border-gray-300 bg-white text-gray-900 hover:border-blue-300"
+                  ? "border-primary bg-primary text-primary-foreground"
+                  : "border-border bg-white text-foreground hover:border-primary/30"
                 }`}
             >
-              <p className={`text-sm font-semibold ${selectedService?.id === service.id ? "text-white" : "text-gray-900"}`}>
+              <p className={`text-sm font-semibold ${selectedService?.id === service.id ? "text-white" : "text-foreground"}`}>
                 {service.name}
               </p>
               {service.description && (
-                <p className={`text-xs mt-1 ${selectedService?.id === service.id ? "text-gray-300" : "text-gray-500"}`}>
+                <p className={`text-xs mt-1 ${selectedService?.id === service.id ? "text-muted-foreground/50" : "text-muted-foreground"}`}>
                   {service.description}
                 </p>
               )}
@@ -147,7 +147,7 @@ export default function Step1BasicDetails({
           ))}
         </div>
         {!selectedService && (
-          <p className="text-xs text-gray-400 mt-2">Please select a service to continue.</p>
+          <p className="text-xs text-muted-foreground mt-2">Please select a service to continue.</p>
         )}
       </div>
 

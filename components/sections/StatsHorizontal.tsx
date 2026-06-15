@@ -44,9 +44,9 @@ export default function StatsHorizontal({
       <div className="flex flex-row items-center justify-between gap-6">
         {Array.from({ length: 4 }).map((_, index) => (
           <div key={index} className="flex-1 text-start">
-            <div className="w-12 h-12 rounded-md bg-gray-200 animate-pulse" />
-            <div className="mt-4 h-5 w-16 rounded bg-gray-200 animate-pulse" />
-            <div className="mt-2 h-4 w-24 rounded bg-gray-200 animate-pulse" />
+            <div className="w-12 h-12 rounded-md bg-muted animate-pulse" />
+            <div className="mt-4 h-5 w-16 rounded bg-muted animate-pulse" />
+            <div className="mt-2 h-4 w-24 rounded bg-muted animate-pulse" />
           </div>
         ))}
       </div>
@@ -66,15 +66,15 @@ export default function StatsHorizontal({
         return (
         
           <div key={item.id} className='flex flex-col w-7xl items-start justify-stretch'>
-            <div className="flex items-center justify-center text-gray-900 p-2 rounded-md bg-blue-100 w-12 h-12">
+            <div className="flex items-center justify-center text-foreground p-2 rounded-md bg-accent w-12 h-12">
               <Icon className="w-6 h-6" />
             </div>
 
-            <h3 className="text-lg md:text-lg font-bold text-gray-800 mt-4">
+            <h3 className="text-lg md:text-lg font-bold text-foreground mt-4">
               {item.number}
             </h3>
 
-            <p className="text-sm text-gray-600 font-medium text-left">
+            <p className="text-sm text-muted-foreground font-medium text-left">
               {item.title}
             </p>
           </div>

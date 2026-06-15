@@ -9,6 +9,7 @@ import {
   DrawerHeader,
   DrawerTitle,
 } from "@/components/ui/drawer";
+import { SITE_CONFIG } from "@/lib/constants/content";
 import { X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -56,7 +57,7 @@ export default function MobileMenu({
         {/* Header */}
         <DrawerHeader className="flex items-center justify-between">
           <div className="w-full flex items-center justify-between">
-            <DrawerTitle> Mohit Jangra</DrawerTitle>
+            <DrawerTitle>{SITE_CONFIG.name}</DrawerTitle>
             <DrawerClose asChild>
               <button className="p-2" aria-label="Close menu">
                 <X size={24} />
@@ -76,7 +77,7 @@ export default function MobileMenu({
                 <Link
                   href={link.href}
                   className={`flex items-center gap-3 p-3 rounded-lg transition ${
-                    isActive ? "bg-gray-100 text-gray-800" : "hover:bg-gray-200"
+                    isActive ? "bg-accent text-foreground" : "hover:bg-accent"
                   }`}
                 >
                   <Icon size={20} />

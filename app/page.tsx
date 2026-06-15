@@ -21,11 +21,11 @@ export default function Page() {
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-12 items-start md:gap-6 sm:gap-2">
             {/* Left: Text */}
             <div className="flex flex-col gap-6 justify-center">
-              <h1 className="text-3xl sm:text-6xl md:text-5xl font-bold leading-tight text-gray-900">
+              <h1 className="text-3xl sm:text-6xl md:text-5xl font-bold leading-tight text-foreground">
                 Elevate Your Financial Future
               </h1>
 
-              <p className="text-lg sm:text-xl leading-relaxed text-gray-700">
+              <p className="text-lg sm:text-xl leading-relaxed text-muted-foreground">
                 Empower your financial journey with personalized wealth
                 management and intelligent investment strategies for sustainable
                 growth.
@@ -77,10 +77,10 @@ export default function Page() {
       </section>
 
       {/* Partners Section */}
-      <section className="w-full px-4 py-12 sm:px-6 md:py-16 lg:py-20 bg-gray-50">
+      <section className="w-full px-4 py-12 sm:px-6 md:py-16 lg:py-20 bg-accent">
         <Container>
           <div className="text-center pb-4 sm:pb-4 md:pb-4 lg:pb-6">
-            <h3 className="text-2xl  md:text-3xl sm:text-md lg:text-2xl font-bold text-gray-900">
+            <h3 className="text-2xl  md:text-3xl sm:text-md lg:text-2xl font-bold text-foreground">
               Our Partners
             </h3>
           </div>
@@ -94,7 +94,7 @@ export default function Page() {
       <section className="w-full sm:px-6 py-6 md:py-6  lg:py-14 px-0">
         <Container>
           <div className="text-center pb-4 sm:pb-4 md:pb-4 lg:pb-6">
-            <h3 className="text-2xl  md:text-3xl sm:text-md lg:text-2xl font-bold text-gray-900">
+            <h3 className="text-2xl  md:text-3xl sm:text-md lg:text-2xl font-bold text-foreground">
               Our Services
             </h3>
           </div>

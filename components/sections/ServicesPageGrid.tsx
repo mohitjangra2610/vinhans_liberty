@@ -29,7 +29,7 @@ export function ServicesPageGrid({
       <Link
         key={service.id}
         href={`/services/${service.slug}`}
-        className="flex min-h-105 flex-col rounded-lg border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:shadow-md"
+        className="flex min-h-105 flex-col rounded-lg border border-border bg-white shadow-sm transition-all duration-300 hover:shadow-md"
       >
         <div className="relative h-47.5 w-full overflow-hidden rounded-t-lg sm:h-52.5">
           <Image
@@ -37,22 +37,21 @@ export function ServicesPageGrid({
             alt={service.service_name}
             fill
             className="object-cover"
-            unoptimized
           />
         </div>
 
         <div className="flex flex-1 flex-col justify-between px-6 py-8 sm:px-7 sm:py-9">
           <div>
-            <h3 className="text-md font-bold leading-7 text-gray-800">
+            <h3 className="text-md font-bold leading-7 text-foreground">
               {service.service_name}
             </h3>
 
-            <p className="mt-4 line-clamp-3 text-base font-regular leading-7 text-gray-700">
+            <p className="mt-4 line-clamp-3 text-base font-regular leading-7 text-muted-foreground">
               {service.short_description}
             </p>
           </div>
 
-          <span className="mt-10 inline-flex items-center gap-3 text-sm font-semibold text-blue-600">
+          <span className="mt-10 inline-flex items-center gap-3 text-sm font-semibold text-primary">
             Learn More
             <ArrowRight className="h-5 w-5" />
           </span>

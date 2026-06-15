@@ -65,7 +65,7 @@ export default function TestimonialsCarousel({
       </div>
 
       {/* Message - Fixed Height */}
-      <p className="text-base md:text-lg font-normal text-gray-700 leading-relaxed min-h-20 md:min-h-25 line-clamp-4">
+      <p className="text-base md:text-lg font-normal text-muted-foreground leading-relaxed min-h-20 md:min-h-25 line-clamp-4">
         {currentTestimonial.message}
       </p>
 
@@ -80,10 +80,9 @@ export default function TestimonialsCarousel({
               width={40}
               height={40}
               className="rounded-full object-cover w-10 h-10"
-              unoptimized
             />
           ) : (
-            <div className="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center text-sm font-semibold text-gray-700">
+            <div className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-sm font-semibold text-muted-foreground">
               {currentTestimonial.full_name.charAt(0).toUpperCase()}
             </div>
           )}
@@ -91,7 +90,7 @@ export default function TestimonialsCarousel({
 
         {/* Name & Rating */}
         <div className="flex flex-col gap-1">
-          <p className="text-sm md:text-base font-medium text-gray-900">
+          <p className="text-sm md:text-base font-medium text-foreground">
             {currentTestimonial.full_name}
           </p>
           <Stars rating={currentTestimonial.star_rating} />
@@ -108,8 +107,8 @@ export default function TestimonialsCarousel({
               onClick={() => setCurrentIndex(index)}
               className={`rounded-full transition-all duration-300 ${
                 index === activeIndex
-                  ? 'w-4 h-1 bg-blue-700'
-                  : 'w-2 h-1 bg-gray-300 hover:bg-gray-400'
+                  ? 'w-4 h-1 bg-primary'
+                  : 'w-2 h-1 bg-muted hover:bg-primary/40'
               }`}
               aria-label={`Show testimonial ${index + 1}`}
             />

@@ -21,7 +21,7 @@ export default function MobileMenuButton() {
   return (
     <>
       <button
-        className="md:hidden fixed bottom-8 right-8 w-12 h-12 rounded-full bg-gray-900 flex items-center justify-center shadow-lg z-50 hover:bg-gray-800 transition pointer-events-auto"
+        className="md:hidden fixed bottom-8 right-8 w-12 h-12 rounded-full bg-primary flex items-center justify-center shadow-lg z-50 hover:bg-primary-hover transition pointer-events-auto"
         style={{
           position: 'fixed',
           bottom: '2rem',

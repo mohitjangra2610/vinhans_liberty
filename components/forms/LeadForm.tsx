@@ -167,16 +167,16 @@ export default function LeadForm() {
             height="28"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="#16a34a"
+            stroke="currentColor" className="text-success"
             strokeWidth="2"
           >
             <polyline points="20 6 9 17 4 12" />
           </svg>
         </div>
-        <h2 className="text-2xl font-bold text-gray-900 mb-3">
+        <h2 className="text-2xl font-bold text-foreground mb-3">
           Request Submitted!
         </h2>
-        <p className="text-gray-500 text-sm leading-7">
+        <p className="text-muted-foreground text-sm leading-7">
           Thank you for choosing American Wealth Corp. We have received your
           request and will get back to you with a personalized quotation as soon
           as possible.
@@ -199,9 +199,9 @@ export default function LeadForm() {
           <div key={s} className="flex items-center gap-2 flex-1">
             <div
               className={`w-6 h-6 rounded-full flex items-center justify-center text-sm font-semibold border-2 transition-all
-              ${step === s ? "bg-blue-600 text-white border-blue-600" : ""}
+              ${step === s ? "bg-primary text-primary-foreground border-primary" : ""}
               ${step > s ? "bg-gold text-white border-gold" : ""}
-              ${step < s ? "bg-white text-gray-400 border-gray-200" : ""}
+              ${step < s ? "bg-white text-muted-foreground border-border" : ""}
             `}
             >
               {step > s ? (
@@ -221,14 +221,14 @@ export default function LeadForm() {
             </div>
             <span
               className={`text-xs font-medium hidden sm:block
-              ${step === s ? "text-ink" : "text-gray-400"}
+              ${step === s ? "text-ink" : "text-muted-foreground"}
             `}
             >
               {getStepLabel(s)}
             </span>
             {s < 3 && (
               <div
-                className={`flex-1 h-0.5 ${step > s ? "bg-gold" : "bg-gray-200"}`}
+                className={`flex-1 h-0.5 ${step > s ? "bg-gold" : "bg-muted"}`}
               />
             )}
           </div>

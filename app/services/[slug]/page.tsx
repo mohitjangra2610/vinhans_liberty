@@ -52,7 +52,7 @@ export default async function ServiceDetailPage({
           </div>
 
           <div className="space-y-4">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">
               Service Detail
             </p>
 
@@ -113,7 +113,7 @@ export default async function ServiceDetailPage({
                       variant={isActive ? "default" : "ghost"}
                       className={`w-full justify-between rounded-xl ${
                         isActive
-                          ? "bg-blue-600 text-white hover:bg-blue-700"
+                          ? "bg-primary text-primary-foreground hover:bg-primary-hover"
                           : "text-text-dim hover:bg-muted"
                       }`}
                     >
@@ -138,14 +138,14 @@ export default async function ServiceDetailPage({
                 Talk to our team or request a free quote for this service.
               </p>
 
-              <Button className="w-full rounded-xl bg-blue-600 hover:bg-blue-700">
+              <Button className="w-full rounded-xl bg-primary hover:bg-primary-hover">
                 <CalendarDays className="mr-2 h-4 w-4" />
                 Schedule a Call
               </Button>
 
               <Button
                 variant="outline"
-                className="w-full rounded-xl border-blue-600 text-blue-600 hover:bg-blue-50"
+                className="w-full rounded-xl border-primary text-primary hover:bg-accent"
               >
                 <FileText className="mr-2 h-4 w-4" />
                 Request Free Quote

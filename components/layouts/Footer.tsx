@@ -13,7 +13,7 @@ const footerLinks = [
 export function Footer() {
   return (
     <footer className="w-full px-4 py-6 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-7xl rounded-md bg-blue-800 px-5 py-5 text-white shadow-xl">
+      <div className="mx-auto max-w-7xl rounded-md bg-primary px-5 py-5 text-white shadow-xl">
         <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
           <div className="flex flex-col gap-2">
             <Image

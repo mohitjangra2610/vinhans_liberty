@@ -29,7 +29,7 @@ export function PartnersGrid({
       <Link
         key={partner.id}
         href={`/partners/${partner.slug}`}
-        className="flex min-h-65 flex-col justify-between rounded-lg border border-gray-200 bg-gray-25 p-4 shadow-sm transition-shadow duration-300 hover:shadow-md sm:min-h-75"
+        className="flex min-h-65 flex-col justify-between rounded-lg border border-border bg-background p-4 shadow-sm transition-shadow duration-300 hover:shadow-md sm:min-h-75"
       >
         <div>
           <h3 className="line-clamp-2 text-sm font-bold leading-5 text-black sm:text-base sm:leading-6">
@@ -42,7 +42,7 @@ export function PartnersGrid({
         </div>
 
         <div className="mt-6 sm:mt-8">
-          <div className="flex h-10 items-center justify-center bg-[#F1F7FF] px-4 sm:h-11 sm:px-6">
+          <div className="flex h-10 items-center justify-center bg-accent px-4 sm:h-11 sm:px-6">
             <Image
               src={partner.logo_url}
               alt={partner.company_name}
@@ -52,7 +52,7 @@ export function PartnersGrid({
             />
           </div>
 
-          <div className="mt-5 inline-flex items-center gap-2 text-xs font-medium text-blue-700 sm:mt-7 sm:text-sm">
+          <div className="mt-5 inline-flex items-center gap-2 text-xs font-medium text-primary sm:mt-7 sm:text-sm">
             Read {partner.company_name} Story
             <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
           </div>

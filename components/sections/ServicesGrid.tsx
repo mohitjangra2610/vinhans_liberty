@@ -37,7 +37,6 @@ export function ServicesGrid({ initialServices }: Readonly<ServicesGridProps>) {
                 width={80}
                 height={80}
                 className="object-contain"
-                unoptimized
               />
             </div>
 
@@ -51,7 +50,7 @@ export function ServicesGrid({ initialServices }: Readonly<ServicesGridProps>) {
                 {service.short_description}
               </p>
 
-              <span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-blue-600">
+              <span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-primary">
                 Learn more
                 <ArrowRight className="h-4 w-4" />
               </span>

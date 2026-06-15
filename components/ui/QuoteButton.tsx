@@ -15,7 +15,7 @@ export default function QuoteButton() {
       variant="default"
       size="lg"
       onClick={handleClick}
-      className="px-6 py-3 text-white rounded-md hover:bg-blue-700 transition duration-300 w-full md:w-auto"
+      className="px-6 py-3 text-white rounded-md hover:bg-primary-hover transition duration-300 w-full md:w-auto"
     >
       Get Free Quote
     </Button>

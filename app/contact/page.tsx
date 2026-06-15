@@ -8,14 +8,14 @@ import Image from "next/image";
 export default function Contact() {
   return (
     <main>
-      <section className="flex min-h-55 w-full items-center justify-center bg-linear-60 from-yellow-50 via-blue-50 to-red-50 px-4 py-10 text-center sm:min-h-65 sm:px-6 lg:px-8">
+      <section className="flex min-h-55 w-full items-center justify-center gradient-hero px-4 py-10 text-center sm:min-h-65 sm:px-6 lg:px-8">
         <Container>
           <div className="mx-auto flex h-full w-full max-w-3xl flex-col items-center justify-center gap-4">
-            <h1 className="text-xl font-bold leading-tight text-gray-900 sm:text-2xl">
+            <h1 className="text-xl font-bold leading-tight text-foreground sm:text-2xl">
               Contact Us
             </h1>
 
-            <p className="max-w-2xl text-base leading-relaxed text-gray-700 sm:text-lg">
+            <p className="max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
               Get clarity on your goals, explore personalized strategies, and
               ask anything. This call is built entirely around your financial
               needs.
@@ -29,16 +29,16 @@ export default function Contact() {
           <div className="flex w-full flex-col items-start justify-between gap-8 md:flex-row md:items-center">
             <div className="flex flex-col items-start">
               <Mail />
-              <p className="mt-2 text-lg font-semibold text-gray-800">
+              <p className="mt-2 text-lg font-semibold text-foreground">
                 Send an email to us
               </p>
-              <p className="text-sm font-normal text-gray-600">
+              <p className="text-sm font-normal text-muted-foreground">
                 empowerme@americanwealthcorp.com
               </p>
 
               <Link
                 href="mailto:empowerme@americanwealthcorp.com"
-                className="mt-5 inline-flex items-center gap-2 text-xs font-medium text-blue-700 sm:mt-7 sm:text-sm"
+                className="mt-5 inline-flex items-center gap-2 text-xs font-medium text-primary sm:mt-7 sm:text-sm"
               >
                 <span>Send an email</span>
                 <ArrowRight className="h-4 w-4" />
@@ -53,10 +53,10 @@ export default function Contact() {
                 height={24}
               />
 
-              <p className="mt-2 text-lg font-semibold text-gray-800">
+              <p className="mt-2 text-lg font-semibold text-foreground">
                 Whatsapp us
               </p>
-              <p className="text-sm font-normal text-gray-600">
+              <p className="text-sm font-normal text-muted-foreground">
                 (317) 602-0574
               </p>
 
@@ -64,7 +64,7 @@ export default function Contact() {
                 href="https://wa.me/13176020574"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-5 inline-flex items-center gap-2 text-xs font-medium text-blue-700 sm:mt-7 sm:text-sm"
+                className="mt-5 inline-flex items-center gap-2 text-xs font-medium text-primary sm:mt-7 sm:text-sm"
               >
                 <span>Open WhatsApp Web</span>
                 <ArrowRight className="h-4 w-4" />
@@ -73,16 +73,16 @@ export default function Contact() {
 
             <div className="flex flex-col items-start">
               <PhoneCall />
-              <p className="mt-2 text-lg font-semibold text-gray-800">
+              <p className="mt-2 text-lg font-semibold text-foreground">
                 Call Us
               </p>
-              <p className="text-sm font-normal text-gray-600">
+              <p className="text-sm font-normal text-muted-foreground">
                 (317) 602-0574
               </p>
 
               <Link
                 href="tel:+13176020574"
-                className="mt-5 inline-flex items-center gap-2 text-xs font-medium text-blue-700 sm:mt-7 sm:text-sm"
+                className="mt-5 inline-flex items-center gap-2 text-xs font-medium text-primary sm:mt-7 sm:text-sm"
               >
                 <span>Call now</span>
                 <ArrowRight className="h-4 w-4" />
@@ -98,6 +98,7 @@ export default function Contact() {
           className="h-full w-full border-0"
           title="Calendly booking"
           allowFullScreen
+          sandbox="allow-scripts allow-forms allow-same-origin"
         />
       </section>
     </main>

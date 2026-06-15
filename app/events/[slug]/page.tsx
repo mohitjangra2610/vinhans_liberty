@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { notFound } from "next/navigation";
 
+import { DataSource, EventFilter } from "@/lib/constants/enums";
 import { getEvents } from "@/lib/apicalls/events";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -54,14 +55,14 @@ export default async function EventDetailPage({
 }: Readonly<EventDetailPageProps>) {
   const { slug } = await params;
 
-  const events = await getEvents({ source: "server" });
+  const events = await getEvents({ source: DataSource.SERVER });
   const event = events.find((item) => matchSlug(item.slug, slug));
 
   if (!event) {
     notFound();
   }
 
-  const isOnline = event.event_type === "online";
+  const isOnline = event.event_type === EventFilter.ONLINE;
 
   const primaryAddress = event.event_addresses?.[0] ?? null;
 
@@ -86,7 +87,7 @@ export default async function EventDetailPage({
           </div>
 
           <div className="space-y-4">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">
               Event Detail
             </p>
 
@@ -104,7 +105,7 @@ export default async function EventDetailPage({
             <div className="grid gap-4 sm:grid-cols-2">
               <Card className="rounded-2xl border-border-muted shadow-sm">
                 <CardContent className="flex items-start gap-4 p-5">
-                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent text-primary">
                     <CalendarDays className="h-5 w-5" />
                   </div>
                   <div>
@@ -120,7 +121,7 @@ export default async function EventDetailPage({
 
               <Card className="rounded-2xl border-border-muted shadow-sm">
                 <CardContent className="flex items-start gap-4 p-5">
-                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent text-primary">
                     <Video className="h-5 w-5" />
                   </div>
                   <div>
@@ -139,13 +140,13 @@ export default async function EventDetailPage({
                 event.event_addresses.map((addr, index) => (
                   <Card key={addr.id} className="rounded-2xl border-border-muted shadow-sm">
                     <CardContent className="flex items-start gap-4 p-5">
-                      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+                      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent text-primary">
                         <MapPin className="h-5 w-5" />
                       </div>
 
                       <div className="flex-1 space-y-2">
                         {/* Venue label */}
-                        <p className="text-xs font-semibold uppercase tracking-wide text-blue-600">
+                        <p className="text-xs font-semibold uppercase tracking-wide text-primary">
                           {addr.location_label || `Venue ${index + 1}`}
                         </p>
 
@@ -172,7 +173,7 @@ export default async function EventDetailPage({
                             href={addr.google_map_location}
                             target="_blank"
                             rel="noreferrer"
-                            className="inline-flex items-center gap-1 text-sm font-semibold text-blue-600"
+                            className="inline-flex items-center gap-1 text-sm font-semibold text-primary"
                           >
                             View on map
                             <ExternalLink className="h-3.5 w-3.5" />
@@ -185,7 +186,7 @@ export default async function EventDetailPage({
               ) : (
                 <Card className="rounded-2xl border-border-muted shadow-sm">
                   <CardContent className="flex items-start gap-4 p-5">
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent text-primary">
                       <MapPin className="h-5 w-5" />
                     </div>
                     <div>
@@ -238,7 +239,7 @@ export default async function EventDetailPage({
                         </p>
 
                         {organizer.occupation ? (
-                          <p className="mt-1 text-sm text-blue-600">
+                          <p className="mt-1 text-sm text-primary">
                             {organizer.occupation}
                           </p>
                         ) : null}
@@ -283,7 +284,7 @@ export default async function EventDetailPage({
         <aside className="space-y-6 lg:sticky lg:top-24 lg:h-fit">
           <Card className="rounded-2xl border-border-muted shadow-sm">
             <CardContent className="space-y-4 p-5">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">
                 Registration
               </p>
 
@@ -297,7 +298,7 @@ export default async function EventDetailPage({
 
               <Button
                 asChild
-                className="w-full rounded-xl bg-blue-600 hover:bg-blue-700"
+                className="w-full rounded-xl bg-primary hover:bg-primary-hover"
               >
                 <a
                   href={event.registration_link}
@@ -326,7 +327,7 @@ export default async function EventDetailPage({
                       variant={isActive ? "default" : "ghost"}
                       className={`w-full justify-between rounded-xl ${
                         isActive
-                          ? "bg-blue-600 text-white hover:bg-blue-700"
+                          ? "bg-primary text-primary-foreground hover:bg-primary-hover"
                           : "text-text-dim hover:bg-muted"
                       }`}
                     >

@@ -79,11 +79,11 @@ export function EventsClientSection({
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between md:gap-8">
           {/* Left: Text */}
           <div className="flex flex-col gap-2 md:gap-3">
-            <p className="text-2xl md:text-3xl lg:text-2xl font-bold text-gray-900">
+            <p className="text-2xl md:text-3xl lg:text-2xl font-bold text-foreground">
               Join Our Events
             </p>
 
-            <h2 className="text-sm md:text-base lg:text-lg font-medium text-gray-600 max-w-md">
+            <h2 className="text-sm md:text-base lg:text-lg font-medium text-muted-foreground max-w-md">
               Be part of upcoming events, gatherings, and special experiences.
             </h2>
           </div>
@@ -104,7 +104,7 @@ export function EventsClientSection({
                 key={filter}
                 value={filter}
                 aria-label={filter}
-                className="rounded-full px-3 md:px-4 py-2 md:py-2.5 text-xs md:text-sm font-medium capitalize whitespace-nowrap transition-colors data-[state=on]:bg-gray-700 data-[state=on]:text-white data-[state=off]:bg-gray-100 data-[state=off]:text-gray-700 hover:bg-gray-200"
+                className="rounded-full px-3 md:px-4 py-2 md:py-2.5 text-xs md:text-sm font-medium capitalize whitespace-nowrap transition-colors data-[state=on]:bg-primary data-[state=on]:text-primary-foreground data-[state=on]:hover:bg-primary-hover data-[state=off]:bg-muted data-[state=off]:text-muted-foreground hover:bg-muted/80"
               >
                 {filter}
               </ToggleGroupItem>
@@ -146,7 +146,7 @@ export function EventsClientSection({
                     <div className="absolute left-4 top-4">
                       <Badge
                         variant="secondary"
-                        className="bg-green-50 text-green-700 dark:bg-green-950 dark:text-green-300 w-fit h-6"
+                        className="bg-success-bg text-success dark:bg-success/20 dark:text-success w-fit h-6"
                       >
                         {statusLabel}
                       </Badge>
@@ -155,11 +155,11 @@ export function EventsClientSection({
 
                   <div className="inline-flex w-full flex-1 flex-col items-start justify-start gap-3 p-2">
                     <div className="flex w-full flex-col items-start justify-start">
-                      <h4 className="w-full text-lg font-bold leading-7 text-gray-800">
+                      <h4 className="w-full text-lg font-bold leading-7 text-foreground">
                         {event.event_name}
                       </h4>
 
-                      <p className="w-full text-sm font-normal leading-[22.4px] text-gray-600">
+                      <p className="w-full text-sm font-normal leading-[22.4px] text-muted-foreground">
                         {event.short_description}
                       </p>
                     </div>
@@ -178,22 +178,22 @@ export function EventsClientSection({
                     <div className="inline-flex items-start justify-start gap-1.5">
                       {isOnline ? (
                         <Video
-                          className="h-18px w-18px text-gray-700"
+                          className="h-18px w-18px text-muted-foreground"
                           strokeWidth={1.5}
                         />
                       ) : (
                         <MapPin
-                          className="h-18px w-18px text-gray-700"
+                          className="h-18px w-18px text-muted-foreground"
                           strokeWidth={1.5}
                         />
                       )}
 
                       <div className="inline-flex flex-col items-start justify-center ">
-                        <p className="font-lato text-sm font-normal leading-[22.4px] text-gray-600">
+                        <p className="font-lato text-sm font-normal leading-[22.4px] text-muted-foreground">
                           {isOnline ? "Online Event" : "Offline Event"}
                         </p>
 
-                        <p className="font-lato text-sm font-normal leading-[22.4px] text-gray-600">
+                        <p className="font-lato text-sm font-normal leading-[22.4px] text-muted-foreground">
                           {locationText}
                         </p>
                       </div>

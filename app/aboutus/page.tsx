@@ -89,19 +89,19 @@ export default function AboutUs() {
   return (
     <main className="w-full bg-white">
       {/* Hero */}
-      <section className="px-4 py-20 sm:px-6 lg:px-8 bg-linear-60 from-yellow-50 via-blue-50 to-red-50">
+      <section className="px-4 py-20 sm:px-6 lg:px-8 gradient-hero">
         <div className="mx-auto flex max-w-7xl justify-center">
           <div className="flex max-w-3xl flex-col items-center text-center">
-            <Badge className="mb-5 bg-blue-50 text-blue-700 hover:bg-blue-50">
+            <Badge className="mb-5 bg-accent text-primary hover:bg-accent">
               Financial clarity, protection, and growth
             </Badge>
 
-            <h1 className="text-2xl font-bold tracking-tight text-gray-950 sm:text-3xl lg:text-4xl">
+            <h1 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl lg:text-4xl">
               We help families and business owners build safer, smarter
               financial futures.
             </h1>
 
-            <p className="mt-6 text-base leading-8 text-gray-600 sm:text-lg">
+            <p className="mt-6 text-base leading-8 text-muted-foreground sm:text-lg">
               American Wealth helps you structure income, reduce financial
               risk, protect your wealth, and plan for long-term transfer with a
               clear system.
@@ -124,15 +124,15 @@ export default function AboutUs() {
       </section>
 
       {/* Core Promise Strip */}
-      <section className="border-y bg-gray-50 px-4 py-8 sm:px-6 lg:px-8">
+      <section className="border-y bg-accent px-4 py-8 sm:px-6 lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {promises.map((item) => (
             <div
               key={item}
               className="flex items-center gap-3 rounded-xl bg-white p-4 shadow-sm"
             >
-              <CheckCircle2 className="h-5 w-5 text-blue-700" />
-              <p className="font-medium text-gray-900">{item}</p>
+              <CheckCircle2 className="h-5 w-5 text-primary" />
+              <p className="font-medium text-foreground">{item}</p>
             </div>
           ))}
         </div>
@@ -142,17 +142,17 @@ export default function AboutUs() {
       <section className="px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:items-center">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-widest text-blue-700">
+            <p className="text-sm font-semibold uppercase tracking-widest text-primary">
               Why this exists
             </p>
 
-            <h2 className="mt-3 text-2xl font-bold text-gray-900 sm:text-xl">
+            <h2 className="mt-3 text-2xl font-bold text-foreground sm:text-xl">
               Traditional financial planning often misses what quietly destroys
               wealth.
             </h2>
           </div>
 
-          <div className="space-y-4 text-base leading-8 text-gray-600">
+          <div className="space-y-4 text-base leading-8 text-muted-foreground">
             <p>
               Many financial plans focus only on returns. That is not enough.
               Taxes, market losses, healthcare costs, poor protection, and weak
@@ -168,14 +168,14 @@ export default function AboutUs() {
       </section>
 
       {/* Our Approach */}
-      <section className="bg-gray-50 px-4 py-20 sm:px-6 lg:px-8">
+      <section className="bg-accent px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-widest text-blue-700">
+            <p className="text-sm font-semibold uppercase tracking-widest text-primary">
               Our approach
             </p>
 
-            <h2 className="mt-2 text-2xl font-bold text-gray-900 sm:text-xl">
+            <h2 className="mt-2 text-2xl font-bold text-foreground sm:text-xl">
               We do not play the same game as traditional advisors.
             </h2>
           </div>
@@ -184,13 +184,13 @@ export default function AboutUs() {
             {approach.map((item) => (
               <Card key={item.title} className="rounded-xl shadow-sm">
                 <CardContent className="p-4">
-                  <item.icon className="h-8 w-8 text-blue-700" />
+                  <item.icon className="h-8 w-8 text-primary" />
 
-                  <h4 className="mt-5 text-xl font-bold text-gray-800">
+                  <h4 className="mt-5 text-xl font-bold text-foreground">
                     {item.title}
                   </h4>
 
-                  <p className="mt-3 text-sm leading-7 text-gray-600">
+                  <p className="mt-3 text-sm leading-7 text-muted-foreground">
                     {item.description}
                   </p>
                 </CardContent>
@@ -204,11 +204,11 @@ export default function AboutUs() {
       <section className="px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-widest text-blue-700">
+            <p className="text-sm font-semibold uppercase tracking-widest text-primary">
               How it works
             </p>
 
-            <h2 className="mt-3 text-2xl font-bold text-gray-900 sm:text-2xl">
+            <h2 className="mt-3 text-2xl font-bold text-foreground sm:text-2xl">
               A clear system, not random advice.
             </h2>
           </div>
@@ -219,11 +219,11 @@ export default function AboutUs() {
                 key={step}
                 className="rounded-xl border bg-white p-5 shadow-sm"
               >
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-500 text-sm font-bold text-white">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-sm font-bold text-white">
                   {index + 1}
                 </div>
 
-                <p className="mt-5 text-sm font-semibold leading-6 text-gray-900">
+                <p className="mt-5 text-sm font-semibold leading-6 text-foreground">
                   {step}
                 </p>
               </div>
@@ -233,14 +233,14 @@ export default function AboutUs() {
       </section>
 
       {/* Who We Help */}
-      <section className="bg-gray-50 px-4 py-20 sm:px-6 lg:px-8">
+      <section className="bg-accent px-4 py-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-widest text-blue-700">
+            <p className="text-sm font-semibold uppercase tracking-widest text-primary">
               Who we help
             </p>
 
-            <h2 className="mt-3 text-2xl font-bold text-gray-900 sm:text-2xl">
+            <h2 className="mt-3 text-2xl font-bold text-foreground sm:text-2xl">
               Built for people who need financial structure, not noise.
             </h2>
           </div>
@@ -249,13 +249,13 @@ export default function AboutUs() {
             {audiences.map((item) => (
               <Card key={item.title} className="rounded-2xl shadow-sm">
                 <CardContent className="p-4">
-                  <item.icon className="h-8 w-8 text-blue-700" />
+                  <item.icon className="h-8 w-8 text-primary" />
 
-                  <h3 className="mt-5 text-lg font-bold text-gray-900">
+                  <h3 className="mt-5 text-lg font-bold text-foreground">
                     {item.title}
                   </h3>
 
-                  <p className="mt-3 text-sm leading-6 text-gray-600">
+                  <p className="mt-3 text-sm leading-6 text-muted-foreground">
                     {item.description}
                   </p>
                 </CardContent>
@@ -270,11 +270,11 @@ export default function AboutUs() {
         <div className="mx-auto max-w-7xl rounded-3xl border bg-white p-8 shadow-sm">
           <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-widest text-blue-700">
+              <p className="text-sm font-semibold uppercase tracking-widest text-primary">
                 Compliance & trust
               </p>
 
-              <h2 className="mt-3 text-2xl font-bold text-gray-900">
+              <h2 className="mt-3 text-2xl font-bold text-foreground">
                 Built around trust, transparency, and responsible guidance.
               </h2>
             </div>
@@ -287,10 +287,10 @@ export default function AboutUs() {
               ].map(([Icon, label]) => (
                 <div
                   key={label as string}
-                  className="rounded-2xl bg-gray-50 p-5"
+                  className="rounded-2xl bg-accent p-5"
                 >
-                  <Icon className="h-7 w-7 text-blue-700" />
-                  <p className="mt-4 font-semibold text-gray-800">
+                  <Icon className="h-7 w-7 text-primary" />
+                  <p className="mt-4 font-semibold text-foreground">
                     {label as string}
                   </p>
                 </div>
@@ -301,10 +301,10 @@ export default function AboutUs() {
       </section>
 
       {/* Risk Awareness */}
-      <section className="bg-gray-950 px-4 py-20 text-white sm:px-6 lg:px-8">
+      <section className="bg-primary px-4 py-20 text-white sm:px-6 lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-widest text-blue-300">
+            <p className="text-sm font-semibold uppercase tracking-widest text-primary-foreground/70">
               Risk awareness
             </p>
 
@@ -316,7 +316,7 @@ export default function AboutUs() {
           <div className="space-y-4">
             {risks.map((risk) => (
               <div key={risk} className="flex gap-3 rounded-2xl bg-white/5 p-4">
-                <Umbrella className="mt-1 h-5 w-5 shrink-0 text-blue-300" />
+                <Umbrella className="mt-1 h-5 w-5 shrink-0 text-primary-foreground/70" />
                 <p className="text-sm leading-7 text-white/80">{risk}</p>
               </div>
             ))}
@@ -326,7 +326,7 @@ export default function AboutUs() {
 
       {/* CTA */}
       <section className="px-4 py-20 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl rounded-3xl bg-blue-950 p-8 text-white sm:p-12">
+        <div className="mx-auto max-w-7xl rounded-3xl bg-primary p-8 text-white sm:p-12">
           <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
               <h2 className="text-2xl font-bold sm:text-2xl">

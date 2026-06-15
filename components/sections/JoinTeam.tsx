@@ -173,7 +173,7 @@ export function JoinTeam() {
       <div className="mx-auto grid w-full max-w-7xl gap-12 px-4 md:grid-cols-2 md:items-start">
         {/* LEFT CONTENT */}
         <div className="space-y-6">
-          <h3 className="text-2xl md:text-3xl sm:text-md lg:text-2xl font-bold text-gray-900">
+          <h3 className="text-2xl md:text-3xl sm:text-md lg:text-2xl font-bold text-foreground">
             Join Our Team
           </h3>
           <p className="text-base leading-7 text-text-dim">
@@ -265,13 +265,13 @@ export function JoinTeam() {
           <div className="bg-white rounded-2xl border border-border-muted shadow-xl p-8 w-full max-w-md mx-4" role="dialog" aria-modal="true" aria-labelledby="otp-modal-title">
             {/* Modal Header */}
             <div className="text-center mb-6">
-              <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center mx-auto mb-3">
+              <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center mx-auto mb-3">
                 <svg
                   width="22"
                   height="22"
                   viewBox="0 0 24 24"
                   fill="none"
-                  stroke="#3b82f6"
+                  stroke="currentColor" className="text-primary"
                   strokeWidth="2"
                 >
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
@@ -280,13 +280,13 @@ export function JoinTeam() {
               </div>
               <h2
                 id="otp-modal-title"
-                className="text-lg font-semibold text-gray-900"
+                className="text-lg font-semibold text-foreground"
               >
                 Verify your email
               </h2>
-              <p className="text-sm text-gray-500 mt-1">
+              <p className="text-sm text-muted-foreground mt-1">
                 We sent a 6-digit code to{" "}
-                <span className="font-medium text-gray-700">{form.email}</span>
+                <span className="font-medium text-muted-foreground">{form.email}</span>
               </p>
             </div>
 
@@ -305,7 +305,7 @@ export function JoinTeam() {
                   onChange={(e) => handleOtpChange(i, e.target.value)}
                   onKeyDown={(e) => handleOtpKeyDown(i, e)}
                   onPaste={handleOtpPaste}
-                  className="w-11 text-center text-xl font-semibold border border-border rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-100 outline-none transition-all"
+                  className="w-11 text-center text-xl font-semibold border border-border rounded-lg focus:border-primary focus:ring-2 focus:ring-primary/10 outline-none transition-all"
                   style={{ height: "52px" }}
                 />
               ))}
@@ -335,13 +335,13 @@ export function JoinTeam() {
               Cancel — Form not submitted
             </Button>
 
-            <p className="text-center text-sm text-gray-500 mt-4">
+            <p className="text-center text-sm text-muted-foreground mt-4">
               Didn&apos;t receive it?{" "}
               <button
                 type="button"
                 onClick={handleResend}
                 disabled={resendCooldown > 0}
-                className="text-blue-600 underline disabled:text-gray-400 disabled:no-underline"
+                className="text-primary underline disabled:text-muted-foreground disabled:no-underline"
               >
                 {resendCooldown > 0
                   ? `Resend in ${resendCooldown}s`

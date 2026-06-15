@@ -47,7 +47,7 @@ export default async function PartnerDetailPage({
               </div>
 
               <div className="space-y-3">
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">
                   Partner Detail
                 </p>
 
@@ -100,7 +100,7 @@ export default async function PartnerDetailPage({
             <section className="space-y-4">
               <h2 className="text-2xl font-bold text-black">Result</h2>
 
-              <div className="rounded-2xl border border-blue-100 bg-blue-50/50 p-6">
+              <div className="rounded-2xl border border-primary/10 bg-accent/50 p-6">
                 <p className="whitespace-pre-line text-base leading-8 text-text-dim">
                   {partner.result}
                 </p>
@@ -110,14 +110,14 @@ export default async function PartnerDetailPage({
 
           {partner.review ? (
             <section className="rounded-3xl border border-border-muted bg-white p-6">
-              <Quote className="h-8 w-8 text-blue-600" />
+              <Quote className="h-8 w-8 text-primary" />
 
               <p className="mt-4 text-xl font-medium leading-9 text-black">
                 “{partner.review}”
               </p>
 
               {partner.review_by ? (
-                <p className="mt-5 text-sm font-semibold text-blue-600">
+                <p className="mt-5 text-sm font-semibold text-primary">
                   {partner.review_by}
                 </p>
               ) : null}
@@ -142,7 +142,7 @@ export default async function PartnerDetailPage({
                       variant={isActive ? "default" : "ghost"}
                       className={`w-full justify-between rounded-xl ${
                         isActive
-                          ? "bg-blue-600 text-white hover:bg-blue-700"
+                          ? "bg-primary text-primary-foreground hover:bg-primary-hover"
                           : "text-text-dim hover:bg-muted"
                       }`}
                     >
@@ -171,7 +171,7 @@ export default async function PartnerDetailPage({
               {partner.company_website ? (
                 <Button
                   asChild
-                  className="w-full rounded-xl bg-blue-600 hover:bg-blue-700"
+                  className="w-full rounded-xl bg-primary hover:bg-primary-hover"
                 >
                   <a
                     href={partner.company_website}
