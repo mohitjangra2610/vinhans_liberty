@@ -24,6 +24,16 @@ export default function Contact() {
         </Container>
       </section>
 
+      <section className="h-screen w-full">
+        <iframe
+          src="https://calendly.com/buildwealthwithpk/fna"
+          className="h-full w-full border-0"
+          title="Calendly booking"
+          allowFullScreen
+          sandbox="allow-scripts allow-forms allow-same-origin"
+        />
+      </section>
+
       <section className="w-full px-6 py-6">
         <Container>
           <div className="flex w-full flex-col items-start justify-between gap-8 md:flex-row md:items-center">
@@ -92,15 +102,7 @@ export default function Contact() {
         </Container>
       </section>
 
-      <section className="h-screen w-full">
-        <iframe
-          src="https://calendly.com/buildwealthwithpk/fna"
-          className="h-full w-full border-0"
-          title="Calendly booking"
-          allowFullScreen
-          sandbox="allow-scripts allow-forms allow-same-origin"
-        />
-      </section>
+      
     </main>
   );
 }

@@ -157,7 +157,7 @@ function HeroSection() {
                 size="lg"
                 className="bg-navy text-white hover:bg-primary-hover px-6 py-2.5 text-sm rounded-lg transition-all duration-300 whitespace-nowrap"
               >
-                <Link href="https://calendly.com/buildwealthwithpk/fna">
+                <Link href="/contact">
                   Schedule a Strategy Session
                 </Link>
               </Button>
@@ -224,7 +224,7 @@ function HeroSection() {
             </div>
           </div>
 
-          <div className="relative w-full h-[280px] sm:h-[340px]">
+          <div className="relative w-full height: 280px; sm: height: 340px;">
             <Image
               src="/ent_banner.png"
               alt="Business owners shaking hands"
