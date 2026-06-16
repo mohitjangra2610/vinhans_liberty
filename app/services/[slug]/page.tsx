@@ -36,7 +36,7 @@ export default async function ServiceDetailPage({
 
   return (
     <main className="w-full bg-white px-4 py-10 sm:px-6 lg:px-8">
-      <div className="mx-auto grid w-full max-w-7xl gap-10 lg:grid-cols-[1fr_360px]">
+      <div className="mx-auto grid w-full max-w-7xl gap-10 lg:grid-cols-[1fr_360px] lg:items-start">
         {/* Left Content */}
         <section className="space-y-8">
           <div className="overflow-hidden rounded-2xl border border-border-muted bg-muted">

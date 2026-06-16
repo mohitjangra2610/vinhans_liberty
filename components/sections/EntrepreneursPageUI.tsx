@@ -288,7 +288,7 @@ function QuestionCardsSection() {
           <div>
             <Badge
               variant="secondary"
-              className="h-auto rounded-lg border-0 px-4 py-1.5 font-semibold bg-gold-accent/80 text-muted-foreground uppercase tracking-[0.15em] mb-5"
+              className="h-auto rounded-lg border-0 px-4 py-1.5 font-semibold bg-gold-accent/80 text-muted-foreground uppercase tracking-[0.15em] mb-5 max-sm:mx-auto max-sm:block"
             >
               Critical Questions
             </Badge>
@@ -396,7 +396,7 @@ function MillionDollarSection() {
         <div className="max-w-4xl mx-auto">
           <Badge
             variant="secondary"
-            className="h-auto rounded-lg border-0 px-4 py-1.5 font-semibold bg-gold-accent/80 text-muted-foreground uppercase tracking-[0.15em] mb-5"
+            className="h-auto rounded-lg border-0 px-4 py-1.5 font-semibold bg-gold-accent/80 text-muted-foreground uppercase tracking-[0.15em] mb-5 max-sm:mx-auto max-sm:block"
           >
             What If
           </Badge>
@@ -495,7 +495,7 @@ function ExecutionSection() {
           <div>
             <Badge
               variant="secondary"
-              className="h-auto rounded-lg border-0 px-4 py-1.5 font-semibold bg-gold-accent/80 text-muted-foreground uppercase tracking-[0.15em] mb-5"
+              className="h-auto rounded-lg border-0 px-4 py-1.5 font-semibold bg-gold-accent/80 text-muted-foreground uppercase tracking-[0.15em] mb-5 max-sm:mx-auto max-sm:block"
             >
               Our Philosophy
             </Badge>
@@ -777,7 +777,7 @@ function ContactBlock() {
                   </p>
                   <a
                     href="mailto:pk@americanwealthcorp.com"
-                    className="text-xs sm:text-sm text-muted-foreground hover:text-navy transition-colors text-center block whitespace-nowrap"
+                    className="text-xs sm:text-sm text-muted-foreground hover:text-navy transition-colors text-center block break-all"
                   >
                     pk@americanwealthcorp.com
                   </a>
@@ -793,7 +793,7 @@ function ContactBlock() {
 
 export default function EntrepreneursPageUI() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <HeroSection />
       <TrustBar />
       <QuestionCardsSection />

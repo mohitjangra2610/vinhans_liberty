@@ -30,16 +30,16 @@ export default function MobileMenu({
   const pathname = usePathname();
   const router = useRouter();
 
-  useEffect(() => {
-    if (open) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [open]);
+  // useEffect(() => {
+  //   if (open) {
+  //     document.body.style.overflow = "hidden";
+  //   } else {
+  //     document.body.style.overflow = "";
+  //   }
+  //   return () => {
+  //     document.body.style.overflow = "";
+  //   };
+  // }, [open]);
 
   const handleContactClick = () => {
       onClose();
@@ -52,7 +52,7 @@ export default function MobileMenu({
   };
 
   return (
-    <Drawer open={open} onOpenChange={onClose}>
+    <Drawer open={open} onOpenChange={onClose} disablePreventScroll>
       <DrawerContent>
         {/* Header */}
         <DrawerHeader className="flex items-center justify-between">

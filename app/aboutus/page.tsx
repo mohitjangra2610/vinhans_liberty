@@ -209,7 +209,7 @@ export default function AboutUs() {
             </p>
 
             <h2 className="mt-3 text-2xl font-bold text-foreground sm:text-2xl">
-              A clear system, not random advice.
+              A clear system, not random guesswork.
             </h2>
           </div>
 
