@@ -54,35 +54,35 @@ const fiveCards = [
   {
     icon: UserCheck,
     title: "Executive Bonus Strategy",
-    desc: "Reward and retain top talent with tax-advantaged wealth.",
+    desc: "Reward and retain top talent.",
     tags: ["Retention", "Tax Efficiency", "Loyalty"],
     href: "/entrepreneur/executive-bonus-strategy",
   },
   {
     icon: Scale,
     title: "Buy-Sell Funding Strategy",
-    desc: "Fund agreements that ensure a smooth business transition.",
+    desc: "Fund a smooth business transition.",
     tags: ["Continuity", "Fair Valuation", "Liquidity"],
     href: "/entrepreneur/buy-sell-funding-strategy",
   },
   {
     icon: Shield,
     title: "Key Person Protection",
-    desc: "Protect your business when a critical leader is lost.",
+    desc: "Protect your business if a leader exits.",
     tags: ["Risk Mitigation", "Stability", "Confidence"],
     href: "/entrepreneur/key-person-protection-strategy",
   },
   {
     icon: BarChart3,
     title: "Advanced Tax Strategy",
-    desc: "Minimize tax exposure while maximizing wealth growth.",
+    desc: "Minimize taxes, maximize growth.",
     tags: ["Tax Optimization", "Growth", "Compliance"],
     href: "/entrepreneur/advanced-tax-strategy",
   },
   {
     icon: Heart,
     title: "Family Wealth Protection",
-    desc: "Preserve your family's wealth across generations.",
+    desc: "Preserve family wealth across generations.",
     tags: ["Legacy", "Asset Protection", "Security"],
     href: "/entrepreneur/family-wealth-protection-strategy",
   },
@@ -103,13 +103,13 @@ const executionCards = [
   {
     icon: Award,
     title: "Serious",
-    desc: "They treat wealth strategy like business strategy.",
+    desc: "Wealth strategy is business strategy.",
   },
   { icon: Target, title: "Decisive", desc: "They act when timing matters." },
   {
     icon: ArrowUpRight,
     title: "Action-Oriented",
-    desc: "They move from plan to execution.",
+    desc: "They execute, not just plan.",
   },
 ];
 
@@ -135,17 +135,17 @@ const processSteps = [
   {
     step: 1,
     title: "Discovery",
-    desc: "We learn your business, family, and goals.",
+    desc: "We learn your business and goals.",
   },
   {
     step: 2,
     title: "Review",
-    desc: "Assess your current strategies and objectives.",
+    desc: "Assess your current strategy.",
   },
   {
     step: 3,
     title: "Evaluation",
-    desc: "Match tailored solutions to your needs.",
+    desc: "Match solutions to your needs.",
   },
   { step: 4, title: "Roadmap", desc: "Actionable plan with clear milestones." },
 ];
@@ -298,8 +298,8 @@ function QuestionCardsSection() {
               <span className="text-gold-accent">Few protect it.</span>
             </h2>
             <p className="text-sm sm:text-base text-muted-foreground leading-relaxed max-w-prose">
-              The most successful owners ask hard questions before circumstances
-              force them to.
+              Your business could earn another $1M next year. Before it does,
+              ask the hard questions.
             </p>
           </div>
 
@@ -389,65 +389,6 @@ function FiveConversationsSection() {
   );
 }
 
-function MillionDollarSection() {
-  return (
-    <section className="py-16 lg:py-24 bg-navy text-white overflow-hidden px-4 sm:px-6 lg:px-8">
-      <Container>
-        <div className="max-w-4xl mx-auto">
-          <Badge
-            variant="secondary"
-            className="h-auto rounded-lg border-0 px-4 py-1.5 font-semibold bg-gold-accent/80 text-muted-foreground uppercase tracking-[0.15em] mb-5 max-sm:mx-auto max-sm:block"
-          >
-            What If
-          </Badge>
-
-          <p className="text-gold-accent/80 text-sm sm:text-base tracking-widest uppercase mb-8 font-medium">
-            Your company generated another $1,000,000 next year?
-          </p>
-
-          <div className="space-y-4">
-            {[
-              [
-                "Would your strategy protect that wealth?",
-                "Growth creates exposure. Without structure, more revenue means more risk.",
-              ],
-              [
-                "Are you structured to minimize taxes?",
-                "Tax efficiency should be built in, not bolted on.",
-              ],
-              [
-                "Can your key people share in that success?",
-                "Align incentives with performance for sustainable growth.",
-              ],
-              [
-                "Is your family prepared for what comes next?",
-                "Plan for succession and continuity across generations.",
-              ],
-            ].map(([title, desc], i) => (
-              <div
-                key={i}
-                className="flex items-start gap-4 sm:gap-6 p-5 sm:p-6 rounded-xl border border-white/10 transition-all duration-300 hover:border-gold-accent/30"
-              >
-                <span className="text-gold-accent text-2xl sm:text-3xl font-light leading-none flex-shrink-0">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <div>
-                  <h3 className="text-base sm:text-xl font-semibold mb-1">
-                    {title}
-                  </h3>
-                  <p className="text-xs sm:text-sm text-white/50 leading-relaxed">
-                    {desc}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </Container>
-    </section>
-  );
-}
-
 function WhoWeWorkWithSection() {
   return (
     <section className="py-16 lg:py-24 bg-white px-4 sm:px-6 lg:px-8">
@@ -464,13 +405,16 @@ function WhoWeWorkWithSection() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
+        <div
+          className="flex sm:grid gap-3 sm:gap-4 overflow-x-auto snap-x snap-mandatory sm:grid-cols-3 lg:grid-cols-4 [&::-webkit-scrollbar]:hidden"
+          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+        >
           {audienceItems.map((item) => {
             const Icon = item.icon;
             return (
               <div
                 key={item.label}
-                className="group rounded-xl border border-border bg-white p-5 sm:p-6 text-center transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md hover:border-gold-accent/20"
+                className="group min-w-[140px] snap-start rounded-xl border border-border bg-white p-5 sm:p-6 text-center transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md hover:border-gold-accent/20"
               >
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-navy/5 flex items-center justify-center mx-auto mb-3 transition-colors duration-300 group-hover:bg-navy/10">
                   <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-navy transition-colors duration-300 group-hover:text-gold-accent" />
@@ -505,8 +449,7 @@ function ExecutionSection() {
               <span className="text-gold-accent">Not endless research.</span>
             </h2>
             <p className="text-sm sm:text-base text-muted-foreground leading-relaxed max-w-prose">
-              Our clients value a partner who acts with the same urgency they
-              do.
+              We act with the same urgency our clients do.
             </p>
           </div>
 
@@ -626,7 +569,7 @@ function StrategySessionSection() {
                   </h3>
                   <div className="rounded-xl border border-gold-accent/20 bg-gold-accent/[0.02] p-4 sm:p-5">
                     <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
-                      Business owners ready to evaluate solutions in the next{" "}
+                      For owners ready to act within{" "}
                       <strong className="text-navy">30–60 days</strong>.
                     </p>
                   </div>
@@ -698,8 +641,8 @@ function FinalCTASection() {
           </h2>
 
           <p className="text-white/50 text-sm sm:text-base max-w-prose mx-auto mb-8 leading-relaxed">
-            Take the first step toward a wealth strategy built for everything
-            you&apos;ve created.
+            Take the first step toward protecting everything
+            you&apos;ve built.
           </p>
 
           <Button
@@ -798,7 +741,6 @@ export default function EntrepreneursPageUI() {
       <TrustBar />
       <QuestionCardsSection />
       <FiveConversationsSection />
-      <MillionDollarSection />
       <WhoWeWorkWithSection />
       <ExecutionSection />
       <CostOfWaitingSection />
