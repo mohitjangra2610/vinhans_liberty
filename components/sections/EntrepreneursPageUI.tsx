@@ -52,6 +52,20 @@ const questionCards = [
 
 const fiveCards = [
   {
+    icon: BarChart3,
+    title: "Advanced Tax Strategy",
+    desc: "Minimize taxes, maximize growth.",
+    tags: ["Tax Optimization", "Growth", "Compliance"],
+    href: "/entrepreneur/advanced-tax-strategy",
+  },
+  {
+    icon: Heart,
+    title: "Family Wealth Protection",
+    desc: "Preserve family wealth across generations.",
+    tags: ["Legacy", "Asset Protection", "Security"],
+    href: "/entrepreneur/family-wealth-protection-strategy",
+  },
+  {
     icon: UserCheck,
     title: "Executive Bonus Strategy",
     desc: "Reward and retain top talent.",
@@ -71,20 +85,6 @@ const fiveCards = [
     desc: "Protect your business if a leader exits.",
     tags: ["Risk Mitigation", "Stability", "Confidence"],
     href: "/entrepreneur/key-person-protection-strategy",
-  },
-  {
-    icon: BarChart3,
-    title: "Advanced Tax Strategy",
-    desc: "Minimize taxes, maximize growth.",
-    tags: ["Tax Optimization", "Growth", "Compliance"],
-    href: "/entrepreneur/advanced-tax-strategy",
-  },
-  {
-    icon: Heart,
-    title: "Family Wealth Protection",
-    desc: "Preserve family wealth across generations.",
-    tags: ["Legacy", "Asset Protection", "Security"],
-    href: "/entrepreneur/family-wealth-protection-strategy",
   },
 ];
 
@@ -718,10 +718,10 @@ function ContactBlock() {
                   <p className="text-[10px] text-muted-foreground uppercase tracking-wider text-center">
                     Email
                   </p>
-                  <a
-                    href="mailto:pk@americanwealthcorp.com"
-                    className="text-xs sm:text-sm text-muted-foreground hover:text-navy transition-colors text-center block"
-                  >
+                    <a
+                      href="mailto:pk@americanwealthcorp.com"
+                      className="text-xs sm:text-sm text-muted-foreground hover:text-navy transition-colors text-center block"
+                    >
                     pk@americanwealthcorp.com
                   </a>
                 </div>
@@ -739,7 +739,6 @@ export default function EntrepreneursPageUI() {
     <div>
       <HeroSection />
       <TrustBar />
-      <QuestionCardsSection />
       <FiveConversationsSection />
       <WhoWeWorkWithSection />
       <ExecutionSection />
