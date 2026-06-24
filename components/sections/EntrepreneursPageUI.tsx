@@ -6,7 +6,6 @@ import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import {
   Check,
-  Shield,
   UserCheck,
   RefreshCw,
   TrendingUp,
@@ -167,7 +166,7 @@ function HeroSection() {
                 variant="outline"
                 className="bg-white text-navy border-white hover:bg-white/90 px-6 py-2.5 text-sm rounded-lg transition-all duration-300 whitespace-nowrap"
               >
-                <Link href="#strategies">Explore Strategies</Link>
+                <Link href="#solutions-impact">Explore Strategies</Link>
               </Button>
             </div>
           </div>
@@ -238,7 +237,7 @@ function HeroSection() {
 
 function SolutionsImpactSection() {
   return (
-    <section className="py-16 lg:py-24 bg-white px-4 sm:px-6 lg:px-8">
+    <section id="solutions-impact" className="py-16 lg:py-24 bg-white px-4 sm:px-6 lg:px-8">
       <Container>
         <div className="text-center max-w-3xl mx-auto mb-10 lg:mb-16">
           <Badge

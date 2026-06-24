@@ -26,9 +26,7 @@ export default function Page() {
               </h1>
 
               <p className="text-lg sm:text-xl leading-relaxed text-muted-foreground">
-                Empower your financial journey with personalized wealth
-                management and intelligent investment strategies for sustainable
-                growth.
+                We are on a mission to bring the wisdom of Wall Street to Families and businesses, to help all to build wealth strategically and safely while optimizing taxes.
               </p>
 
               {/* Desktop Buttons */}
