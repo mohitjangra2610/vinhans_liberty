@@ -27,11 +27,11 @@ export default function NavigationHeader() {
         {/* Logo */}
         <Link href="/">
           <Image
-            src="/aws_logo.svg"
+            src="/vl_logo.svg"
             alt="logo"
-            width={160}
-            height={80}
-            className="lg:w-48 md:w-32 h-auto sm:w-28"
+            width={140}
+            height={50}
+            className="lg:w-32 md:w-24 h-auto sm:w-24"
           />
         </Link>
         <nav className="hidden md:flex">
