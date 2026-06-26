@@ -17,7 +17,7 @@ export function Footer() {
         <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
           <div className="flex flex-col gap-2">
             <Image
-              src="/awc_white_logo.svg"
+              src="/vl_white_logo.svg"
               alt="logo"
               width={130}
               height={60}
