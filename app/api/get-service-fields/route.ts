@@ -1,12 +1,12 @@
 import { createClient } from "@supabase/supabase-js";
 import { NextResponse } from "next/server";
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL || '',
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || ''
-);
-
 export async function GET(req: Request) {
+  const supabase = createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL || '',
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || ''
+  );
+
   const { searchParams } = new URL(req.url);
   const service_id = searchParams.get("service_id");
 
