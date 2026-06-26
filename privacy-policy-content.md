@@ -9,7 +9,7 @@
 
 ## 1. Introduction
 
-American Wealth Corp ("we," "us," or "our") operates the website americanwealthcorp.com (the "Site"). This Privacy Policy explains how we collect, use, store, and protect information you provide when you visit our Site, fill out a contact or lead form, or apply to join our team.
+Vinhans Liberty ("we," "us," or "our") operates the website americanwealthcorp.com (the "Site"). This Privacy Policy explains how we collect, use, store, and protect information you provide when you visit our Site, fill out a contact or lead form, or apply to join our team.
 
 This policy applies only to information collected through this Site. It does not apply to information collected offline or through any other means, including third-party websites linked from this Site.
 
@@ -48,7 +48,7 @@ All information submitted through this Site is stored in our secure database (ho
 
 - Where you explicitly request that we connect you with a specific partner or service
 - Where required by law, subpoena, or legal process
-- Where necessary to protect the rights, property, or safety of American Wealth Corp, our users, or the public
+- Where necessary to protect the rights, property, or safety of Vinhans Liberty, our users, or the public
 
 > NOTE TO DEV/AGENT: This clause assumes leads stay in the company's own database only. If this ever changes (e.g., leads get forwarded to AIG, Athene, etc.), this section must be rewritten before that integration ships — do not leave this clause as-is if the data flow changes.
 

@@ -21,31 +21,31 @@ You agree to use this Site only for lawful purposes. You may not use this Site t
 
 ## 3. Intellectual Property
 
-All content on this Site, including text, graphics, logos, and design, is the property of American Wealth Corp or its licensors and may not be copied, reproduced, or distributed without permission.
+All content on this Site, including text, graphics, logos, and design, is the property of Vinhans Liberty or its licensors and may not be copied, reproduced, or distributed without permission.
 
 ---
 
 ## 4. No Financial or Insurance Advice
 
-American Wealth Corp is not an insurance carrier and does not provide financial, legal, or tax advice. Information on this Site is general in nature and provided for informational purposes only. Insurance and financial products referenced on this Site are underwritten and provided by licensed third-party carriers (including but not limited to AIG, Athene, Nationwide Life, Fidelity & Guaranty Life, and Bestow). Any specific advice or product recommendation will only come from a licensed agent, and final terms are governed by the applicable carrier's policy documents, not by this Site.
+Vinhans Liberty is not an insurance carrier and does not provide financial, legal, or tax advice. Information on this Site is general in nature and provided for informational purposes only. Insurance and financial products referenced on this Site are underwritten and provided by licensed third-party carriers (including but not limited to AIG, Athene, Nationwide Life, Fidelity & Guaranty Life, and Bestow). Any specific advice or product recommendation will only come from a licensed agent, and final terms are governed by the applicable carrier's policy documents, not by this Site.
 
 ---
 
 ## 5. Events
 
-Information about workshops or events listed on this Site is subject to change. American Wealth Corp is not responsible for cancellations, rescheduling, or venue changes, though we will make reasonable efforts to notify registrants.
+Information about workshops or events listed on this Site is subject to change. Vinhans Liberty is not responsible for cancellations, rescheduling, or venue changes, though we will make reasonable efforts to notify registrants.
 
 ---
 
 ## 6. Join Our Team / No Guarantee
 
-Information submitted through the "Join Our Team" form is an expression of interest only and does not constitute an offer of employment, partnership, or guaranteed income. Any opportunity discussed is contingent on individual qualification, applicable state licensing requirements, and a separate agreement to be provided if you proceed. American Wealth Corp does not guarantee income, results, or licensing approval for any applicant.
+Information submitted through the "Join Our Team" form is an expression of interest only and does not constitute an offer of employment, partnership, or guaranteed income. Any opportunity discussed is contingent on individual qualification, applicable state licensing requirements, and a separate agreement to be provided if you proceed. Vinhans Liberty does not guarantee income, results, or licensing approval for any applicant.
 
 ---
 
 ## 7. Limitation of Liability
 
-To the fullest extent permitted by law, American Wealth Corp is not liable for any indirect, incidental, or consequential damages arising from your use of this Site.
+To the fullest extent permitted by law, Vinhans Liberty is not liable for any indirect, incidental, or consequential damages arising from your use of this Site.
 
 ---
 

@@ -65,7 +65,7 @@ export default function TermsConditionsContent() {
               <AccordionContent className="text-base sm:text-lg leading-6 sm:leading-7 text-muted-foreground">
                 <p>
                   All content on this Site, including text, graphics, logos, and design, is the
-                  property of American Wealth Corp or its licensors and may not be copied,
+                  property of Vinhans Liberty or its licensors and may not be copied,
                   reproduced, or distributed without permission.
                 </p>
               </AccordionContent>
@@ -81,7 +81,7 @@ export default function TermsConditionsContent() {
             </h2>
             <div className="text-base sm:text-lg leading-6 sm:leading-7 text-muted-foreground">
               <p>
-                American Wealth Corp is not an insurance carrier and does not provide financial,
+                Vinhans Liberty is not an insurance carrier and does not provide financial,
                 legal, or tax advice. Information on this Site is general in nature and provided
                 for informational purposes only. Insurance and financial products referenced on
                 this Site are underwritten and provided by licensed third-party carriers
@@ -104,7 +104,7 @@ export default function TermsConditionsContent() {
               <AccordionContent className="text-base sm:text-lg leading-6 sm:leading-7 text-muted-foreground">
                 <p>
                   Information about workshops or events listed on this Site is subject to change.
-                  American Wealth Corp is not responsible for cancellations, rescheduling, or
+                  Vinhans Liberty is not responsible for cancellations, rescheduling, or
                   venue changes, though we will make reasonable efforts to notify registrants.
                 </p>
               </AccordionContent>
@@ -124,7 +124,7 @@ export default function TermsConditionsContent() {
                 interest only and does not constitute an offer of employment, partnership, or
                 guaranteed income. Any opportunity discussed is contingent on individual
                 qualification, applicable state licensing requirements, and a separate agreement
-                to be provided if you proceed. American Wealth Corp does not guarantee income,
+                to be provided if you proceed. Vinhans Liberty does not guarantee income,
                 results, or licensing approval for any applicant.
               </p>
             </div>
@@ -141,7 +141,7 @@ export default function TermsConditionsContent() {
               </AccordionTrigger>
               <AccordionContent className="text-base sm:text-lg leading-6 sm:leading-7 text-muted-foreground">
                 <p>
-                  To the fullest extent permitted by law, American Wealth Corp is not liable for
+                  To the fullest extent permitted by law, Vinhans Liberty is not liable for
                   any indirect, incidental, or consequential damages arising from your use of
                   this Site.
                 </p>

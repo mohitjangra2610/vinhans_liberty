@@ -12,9 +12,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "America Wealth Corp",
+  title: "Vinhans Liberty",
   description:
-    "Elevate Your Financial Future with America Wealth Corp - Your Trusted Partner in Personalized Wealth Management and Intelligent Investment Strategies for Sustainable Growth.",
+    "Elevate Your Financial Future with Vinhans Liberty - Your Trusted Partner in Personalized Wealth Management and Intelligent Investment Strategies for Sustainable Growth.",
 };
 
 export default function RootLayout({

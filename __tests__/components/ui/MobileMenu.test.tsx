@@ -65,7 +65,7 @@ describe("MobileMenu", () => {
 
   it("renders drawer title with SITE_CONFIG name", () => {
     render(<MobileMenu open={true} onClose={() => {}} />)
-    expect(screen.getByText("American Wealth")).toBeDefined()
+    expect(screen.getByText("Vinhans Liberty")).toBeDefined()
   })
 
   it("renders Contact and Join Our Team buttons", () => {

@@ -599,7 +599,7 @@ function ContactBlock() {
               Chief Financial Officer
             </p>
             <p className="text-muted-foreground text-xs mb-6">
-              American Wealth
+              Vinhans Liberty
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6 max-w-sm mx-auto">

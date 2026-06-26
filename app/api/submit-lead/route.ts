@@ -48,15 +48,15 @@ export async function POST(req: Request) {
   await resend.emails.send({
     from: "noreply@americanwealthcorp.com",
     to: formData.email,
-    subject: "Thank You for Choosing American Wealth Corp",
+    subject: "Thank You for Choosing Vinhans Liberty",
     html: `
       <div style="background:#f4f5f7;padding:32px 16px;font-family:Arial,sans-serif;">
         <div style="max-width:480px;margin:0 auto;background:#ffffff;border-radius:8px;overflow:hidden;border:1px solid #e0e0e0;">
           <div style="background:#0a1628;padding:28px 32px;">
-            <img src="https://americanwealthcorp.com/aws_icon.svg" width="40" height="40" alt="AWC" style="display:inline-block;vertical-align:middle;" />
+            <img src="https://americanwealthcorp.com/aws_icon.svg" width="40" height="40" alt="VL" style="display:inline-block;vertical-align:middle;" />
             <div style="display:inline-block;margin-left:12px;vertical-align:middle;">
-              <p style="color:#ffffff;font-size:15px;font-weight:600;margin:0;">American Wealth Corp</p>
-              <p style="color:#c9a84c;font-size:11px;margin:0;letter-spacing:1px;text-transform:uppercase;">Financial Services</p>
+              <p style="color:#ffffff;font-size:15px;font-weight:600;margin:0;">Vinhans Liberty</p>
+              <p style="color:#D3AF37;font-size:11px;margin:0;letter-spacing:1px;text-transform:uppercase;">Financial Services</p>
             </div>
           </div>
           <div style="padding:32px;">
@@ -69,14 +69,14 @@ export async function POST(req: Request) {
               <p style="font-size:11px;color:#999;letter-spacing:1px;text-transform:uppercase;margin:0 0 8px;">Selected Service</p>
               <p style="font-size:16px;font-weight:700;color:#0a1628;margin:0;">${serviceName}</p>
             </div>
-            <div style="border-left:3px solid #c9a84c;padding-left:14px;margin-bottom:28px;">
+            <div style="border-left:3px solid #D3AF37;padding-left:14px;margin-bottom:28px;">
               <p style="font-size:13px;color:#666;margin:0;line-height:1.6;">
                 If you have any questions in the meantime, feel free to reach out to our team directly.
               </p>
             </div>
             <hr style="border:none;border-top:1px solid #eee;margin:0 0 20px;" />
             <p style="font-size:12px;color:#aaa;margin:0;line-height:1.6;">
-              &copy; 2026 American Wealth Corp. All rights reserved.
+              &copy; 2026 Vinhans Liberty. All rights reserved.
             </p>
           </div>
         </div>
@@ -93,7 +93,7 @@ export async function POST(req: Request) {
       <div style="background:#f4f5f7;padding:32px 16px;font-family:Arial,sans-serif;">
         <div style="max-width:520px;margin:0 auto;background:#ffffff;border-radius:8px;overflow:hidden;border:1px solid #e0e0e0;">
           <div style="background:#0a1628;padding:24px 32px;">
-            <p style="color:#c9a84c;font-size:11px;margin:0 0 4px;letter-spacing:1px;text-transform:uppercase;">New Lead Generated</p>
+            <p style="color:#D3AF37;font-size:11px;margin:0 0 4px;letter-spacing:1px;text-transform:uppercase;">New Lead Generated</p>
             <p style="color:#ffffff;font-size:18px;font-weight:700;margin:0;">${formData.first_name} ${formData.last_name}</p>
           </div>
           <div style="padding:32px;">
@@ -134,7 +134,7 @@ export async function POST(req: Request) {
 
             <hr style="border:none;border-top:1px solid #eee;margin:24px 0 16px;" />
             <p style="font-size:12px;color:#aaa;margin:0;">
-              &copy; 2026 American Wealth Corp. All rights reserved.
+              &copy; 2026 Vinhans Liberty. All rights reserved.
             </p>
           </div>
         </div>

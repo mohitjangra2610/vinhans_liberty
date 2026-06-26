@@ -42,11 +42,11 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
-  --color-gold: #c9a84c;
+  --color-gold: #D3AF37;
   --color-navy: #0B1F4D;
-  --color-primary-hover: #1e40af;
-  --color-primary-active: #2563eb;
-  --color-gold-accent: #C8A24A;
+  --color-primary-hover: #12124f;
+  --color-primary-active: #0e0e42;
+  --color-gold-accent: #D3AF37;
   --color-ink: #0a1628;
   --color-border-muted: #EAECF0;
   --color-text-dim: #344054;
@@ -84,8 +84,8 @@ html {
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.16 0.02 255);
 
-  /* primary = #0B1F4D */
-  --primary: oklch(0.15 0.065 270);
+  /* primary = #18185B */
+  --primary: oklch(0.14 0.09 280);
   --primary-foreground: oklch(1 0 0);
 
   --secondary: oklch(0.96 0.015 255);
@@ -101,9 +101,9 @@ html {
 
   --border: oklch(0.9 0.018 255);
   --input: oklch(0.9 0.018 255);
-  --ring: oklch(0.15 0.065 270);
+  --ring: oklch(0.14 0.09 280);
 
-  --chart-1: oklch(0.15 0.065 270);
+  --chart-1: oklch(0.14 0.09 280);
   --chart-2: oklch(0.62 0.17 230);
   --chart-3: oklch(0.68 0.14 200);
   --chart-4: oklch(0.74 0.11 175);
@@ -113,12 +113,12 @@ html {
 
   --sidebar: oklch(0.985 0.006 255);
   --sidebar-foreground: oklch(0.18 0.025 255);
-  --sidebar-primary: oklch(0.15 0.065 270);
+  --sidebar-primary: oklch(0.14 0.09 280);
   --sidebar-primary-foreground: oklch(1 0 0);
   --sidebar-accent: oklch(0.94 0.035 255);
   --sidebar-accent-foreground: oklch(0.22 0.07 255);
   --sidebar-border: oklch(0.9 0.018 255);
-  --sidebar-ring: oklch(0.15 0.065 270);
+  --sidebar-ring: oklch(0.14 0.09 280);
 
   /* Semantic tokens */
   --success: #16a34a;
@@ -127,16 +127,16 @@ html {
   --warning-bg: #FFFAEB;
   --warning-border: #FEF0C7;
   --warning-text: #B54708;
-  --gold-light: #e8c97a;
-  --gold-muted: #f5e6c0;
+  --gold-light: #e8d68a;
+  --gold-muted: #f5ebd0;
 
   /* Shadows */
   --shadow-event-card-val: 0px 5px 8px -4px rgba(16,24,40,0.03), 0px 8px 24px -4px rgba(16,24,40,0.08);
   --shadow-card-sm-val: 0px 1px 3px rgba(16,24,40,0.1);
 
   /* Gradients */
-  --gradient-brand: linear-gradient(to right, #0B1F4D, #1a3a7a);
-  --gradient-gold: linear-gradient(to right, #C8A24A, #e8c97a);
+  --gradient-brand: linear-gradient(to right, #18185B, #2a2a80);
+  --gradient-gold: linear-gradient(to right, #D3AF37, #e8d68a);
   --gradient-hero: linear-gradient(60deg, #fefce8 0%, #eff6ff 50%, #fff1f2 100%);
   --gradient-entrepreneur: linear-gradient(to right, #475F97, #FBDA8C);
   --gradient-entrepreneur-mobile: linear-gradient(to bottom, #475F97 50%, #FBDA8C);
@@ -152,7 +152,7 @@ html {
   --popover: oklch(0.17 0.03 255);
   --popover-foreground: oklch(0.97 0.006 255);
 
-  --primary: oklch(0.55 0.15 260);
+  --primary: oklch(0.45 0.12 275);
   --primary-foreground: oklch(1 0 0);
 
   --secondary: oklch(0.22 0.035 255);
@@ -168,9 +168,9 @@ html {
 
   --border: oklch(1 0 0 / 12%);
   --input: oklch(1 0 0 / 16%);
-  --ring: oklch(0.55 0.15 260);
+  --ring: oklch(0.45 0.12 275);
 
-  --chart-1: oklch(0.55 0.15 260);
+  --chart-1: oklch(0.45 0.12 275);
   --chart-2: oklch(0.72 0.14 230);
   --chart-3: oklch(0.76 0.12 200);
   --chart-4: oklch(0.8 0.1 175);
@@ -178,12 +178,12 @@ html {
 
   --sidebar: oklch(0.16 0.03 255);
   --sidebar-foreground: oklch(0.97 0.006 255);
-  --sidebar-primary: oklch(0.55 0.15 260);
+  --sidebar-primary: oklch(0.45 0.12 275);
   --sidebar-primary-foreground: oklch(0.08 0.02 255);
   --sidebar-accent: oklch(0.24 0.045 255);
   --sidebar-accent-foreground: oklch(0.96 0.006 255);
   --sidebar-border: oklch(1 0 0 / 12%);
-  --sidebar-ring: oklch(0.55 0.15 260);
+  --sidebar-ring: oklch(0.45 0.12 275);
 
   --success: #22c55e;
   --success-bg: #052e16;
@@ -191,8 +191,8 @@ html {
   --warning-bg: #451a03;
   --warning-border: #78350f;
   --warning-text: #fde68a;
-  --gold-light: #e8c97a;
-  --gold-muted: #3d2e0e;
+  --gold-light: #e8d68a;
+  --gold-muted: #3d2e10;
 }
 
 @layer base {
@@ -257,5 +257,5 @@ html {
 .active-style {
   color: var(--primary) !important;
   font-weight: 500;
-  border-bottom: 2px solid #C8A24A;
+  border-bottom: 2px solid #D3AF37;
 }

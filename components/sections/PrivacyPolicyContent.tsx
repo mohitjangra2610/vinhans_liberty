@@ -33,7 +33,7 @@ export default function PrivacyPolicyContent() {
             </h2>
             <div className="space-y-4 text-base sm:text-lg leading-6 sm:leading-7 text-muted-foreground">
               <p>
-                American Wealth Corp (&quot;we,&quot; &quot;us,&quot; or
+                Vinhans Liberty (&quot;we,&quot; &quot;us,&quot; or
                 &quot;our&quot;) operates the website americanwealthcorp.com
                 (the &quot;Site&quot;). This Privacy Policy explains how we
                 collect, use, store, and protect information you provide when
@@ -145,7 +145,7 @@ export default function PrivacyPolicyContent() {
                   <li>Where required by law, subpoena, or legal process</li>
                   <li>
                     Where necessary to protect the rights, property, or safety
-                    of American Wealth Corp, our users, or the public
+                    of Vinhans Liberty, our users, or the public
                   </li>
                 </ul>
                 <p className="mb-4">

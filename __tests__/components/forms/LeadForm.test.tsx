@@ -147,7 +147,7 @@ describe("LeadForm", () => {
     fireEvent.click(screen.getByText("Verify & Submit"))
     await screen.findByText("Request Submitted!")
     expect(screen.getByText("Request Submitted!")).toBeDefined()
-    expect(screen.getByText(/Thank you for choosing American Wealth Corp/)).toBeDefined()
+    expect(screen.getByText(/Thank you for choosing Vinhans Liberty/)).toBeDefined()
   })
 
   it("shows submit error when OTP send fails", async () => {

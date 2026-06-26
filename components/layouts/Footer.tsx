@@ -24,7 +24,7 @@ export function Footer() {
               className="w-28 md:w-42 h-auto"
             />
             <Link href="/" className="text-sm font-semibold">
-              American Wealth
+              Vinhans Liberty
             </Link>
           </div>
 
@@ -54,7 +54,7 @@ export function Footer() {
         <Separator className="my-4 bg-white/15" />
 
         <div className="flex flex-col gap-3 text-xs text-white/70 md:flex-row md:items-center md:justify-between">
-          <p>© 2026 American Wealth. All Rights Reserved.</p>
+          <p>© 2026 Vinhans Liberty. All Rights Reserved.</p>
 
           <div className="flex gap-5">
             <Link href="/privacypolicy" className="hover:text-white">

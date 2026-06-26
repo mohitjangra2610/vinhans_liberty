@@ -177,7 +177,7 @@ export default function LeadForm() {
           Request Submitted!
         </h2>
         <p className="text-muted-foreground text-sm leading-7">
-          Thank you for choosing American Wealth Corp. We have received your
+          Thank you for choosing Vinhans Liberty. We have received your
           request and will get back to you with a personalized quotation as soon
           as possible.
         </p>
