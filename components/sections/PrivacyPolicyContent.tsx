@@ -34,7 +34,7 @@ export default function PrivacyPolicyContent() {
             <div className="space-y-4 text-base sm:text-lg leading-6 sm:leading-7 text-muted-foreground">
               <p>
                 Vinhans Liberty (&quot;we,&quot; &quot;us,&quot; or
-                &quot;our&quot;) operates the website americanwealthcorp.com
+                &quot;our&quot;) operates the website vinhansliberty.com
                 (the &quot;Site&quot;). This Privacy Policy explains how we
                 collect, use, store, and protect information you provide when
                 you visit our Site, fill out a contact or lead form, or apply to
@@ -302,7 +302,7 @@ export default function PrivacyPolicyContent() {
             </div>
             <div className="rounded-xl border border-border bg-white p-4 sm:p-6 shadow-sm space-y-3 text-base sm:text-lg">
               <p>
-                <strong>Email:</strong> info@amaricanwealthcrop.com
+                <strong>Email:</strong> Pr@vinhansliberty.com
               </p>
             </div>
           </section>

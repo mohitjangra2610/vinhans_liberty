@@ -9,7 +9,7 @@
 
 ## 1. Introduction
 
-Vinhans Liberty ("we," "us," or "our") operates the website americanwealthcorp.com (the "Site"). This Privacy Policy explains how we collect, use, store, and protect information you provide when you visit our Site, fill out a contact or lead form, or apply to join our team.
+Vinhans Liberty ("we," "us," or "our") operates the website vinhansliberty.com (the "Site"). This Privacy Policy explains how we collect, use, store, and protect information you provide when you visit our Site, fill out a contact or lead form, or apply to join our team.
 
 This policy applies only to information collected through this Site. It does not apply to information collected offline or through any other means, including third-party websites linked from this Site.
 

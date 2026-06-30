@@ -36,7 +36,7 @@ export default function TermsConditionsContent() {
               </AccordionTrigger>
               <AccordionContent className="text-base sm:text-lg leading-6 sm:leading-7 text-muted-foreground">
                 <p>
-                  By accessing or using americanwealthcorp.com (the &quot;Site&quot;), you agree to be
+                  By accessing or using vinhansliberty.com (the &quot;Site&quot;), you agree to be
                   bound by these Terms &amp; Conditions. If you do not agree, please do not use
                   this Site.
                 </p>
@@ -187,7 +187,7 @@ export default function TermsConditionsContent() {
             </div>
             <div className="rounded-xl border border-border bg-white p-4 sm:p-6 shadow-sm space-y-3 text-base sm:text-lg">
               <p>
-                <strong>Email:</strong>empowerme@americanwealthcorp.com
+                <strong>Email:</strong>Pr@vinhansliberty.com
               </p>
             </div>
           </section>

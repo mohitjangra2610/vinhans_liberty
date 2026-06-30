@@ -46,14 +46,14 @@ export async function POST(req: Request) {
 
   // User ko thank you email
   await resend.emails.send({
-    from: "noreply@americanwealthcorp.com",
+    from: "noreply@vinhansliberty.com",
     to: formData.email,
     subject: "Thank You for Choosing Vinhans Liberty",
     html: `
       <div style="background:#f4f5f7;padding:32px 16px;font-family:Arial,sans-serif;">
         <div style="max-width:480px;margin:0 auto;background:#ffffff;border-radius:8px;overflow:hidden;border:1px solid #e0e0e0;">
           <div style="background:#0a1628;padding:28px 32px;">
-            <img src="https://americanwealthcorp.com/aws_icon.svg" width="40" height="40" alt="VL" style="display:inline-block;vertical-align:middle;" />
+            <img src="https://vinhansliberty.com/aws_icon.svg" width="40" height="40" alt="VL" style="display:inline-block;vertical-align:middle;" />
             <div style="display:inline-block;margin-left:12px;vertical-align:middle;">
               <p style="color:#ffffff;font-size:15px;font-weight:600;margin:0;">Vinhans Liberty</p>
               <p style="color:#D3AF37;font-size:11px;margin:0;letter-spacing:1px;text-transform:uppercase;">Financial Services</p>
@@ -86,7 +86,7 @@ export async function POST(req: Request) {
 
   // Tujhe lead notification email
   await resend.emails.send({
-    from: "noreply@americanwealthcorp.com",
+    from: "noreply@vinhansliberty.com",
     to: process.env.ADMIN_EMAIL || '',
     subject: `New Lead — ${serviceName} — ${formData.first_name} ${formData.last_name}`,
     html: `

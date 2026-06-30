@@ -13,24 +13,13 @@ import { notFound } from "next/navigation";
 import { DataSource, EventFilter } from "@/lib/constants/enums";
 import { getEvents } from "@/lib/apicalls/events";
 import { Button } from "@/components/ui/button";
+import { EventDateDisplay } from "@/components/ui/event-date-display";
 import { Card, CardContent } from "@/components/ui/card";
 
 interface EventDetailPageProps {
   readonly params: Promise<{
     readonly slug: string;
   }>;
-}
-
-function formatEventDate(date: string): string {
-  return new Intl.DateTimeFormat("en-IN", {
-    weekday: "long",
-    day: "2-digit",
-    month: "long",
-    year: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
-    hour12: true,
-  }).format(new Date(date));
 }
 
 function normalizeSlug(s: string): string {
@@ -112,7 +101,7 @@ export default async function EventDetailPage({
                     <p className="text-sm font-semibold text-black">Date & Time</p>
                     <p className="mt-1 text-sm leading-6 text-text-dim">
                       {primaryAddress?.start_at
-                        ? formatEventDate(primaryAddress.start_at)
+                        ? <EventDateDisplay date={primaryAddress.start_at} endDate={primaryAddress?.end_at} />
                         : "Date TBA"}
                     </p>
                   </div>
@@ -154,8 +143,7 @@ export default async function EventDetailPage({
                         <div className="flex items-start gap-1.5">
                           <CalendarDays className="mt-0.5 h-4 w-4 shrink-0 text-text-dim" />
                           <p className="text-sm leading-6 text-text-dim">
-                            {addr.start_at ? formatEventDate(addr.start_at) : "Date TBA"}
-                            {addr.end_at ? ` – ${formatEventDate(addr.end_at)}` : ""}
+                            {addr.start_at ? <EventDateDisplay date={addr.start_at} endDate={addr.end_at} /> : "Date TBA"}
                           </p>
                         </div>
 

@@ -5,23 +5,13 @@ import { Calendar, MapPin, Video } from "lucide-react";
 
 import { useEvents } from "@/hooks/useevent";
 import type { EventItem } from "@/type/supabase";
+import { EventDateDisplay } from "@/components/ui/event-date-display";
 import { Badge } from "../ui/badge";
 import { ToggleGroup, ToggleGroupItem } from "@radix-ui/react-toggle-group";
 import Link from "next/link";
 
 interface EventsClientSectionProps {
   readonly initialEvents: readonly EventItem[];
-}
-
-function formatEventDate(date: string): string {
-  return new Intl.DateTimeFormat("en-IN", {
-    day: "2-digit",
-    month: "short",
-    year: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
-    hour12: true,
-  }).format(new Date(date));
 }
 
 function getEventLocation(event: EventItem): string {
@@ -118,9 +108,6 @@ export function EventsClientSection({
               const isOnline = event.event_type === "online";
               const imageUrl = getEventImage(event);
               const address = event.event_addresses?.[0];
-              const formattedDate = address?.start_at
-                ? formatEventDate(address.start_at)
-                : "Date TBA";
               const locationText = getEventLocation(event);
 
               const statusLabel = getStatusLabel(event.status);
@@ -171,7 +158,7 @@ export function EventsClientSection({
                       />
 
                       <p className=" text-sm font-normal leading-[22.4px] text-gray">
-                        {formattedDate}
+                        {address?.start_at ? <EventDateDisplay date={address.start_at} endDate={address?.end_at} /> : "Date TBA"}
                       </p>
                     </div>
 

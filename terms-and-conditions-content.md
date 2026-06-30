@@ -9,7 +9,7 @@
 
 ## 1. Acceptance of Terms
 
-By accessing or using americanwealthcorp.com (the "Site"), you agree to be bound by these Terms & Conditions. If you do not agree, please do not use this Site.
+By accessing or using vinhansliberty.com (the "Site"), you agree to be bound by these Terms & Conditions. If you do not agree, please do not use this Site.
 
 ---
 
