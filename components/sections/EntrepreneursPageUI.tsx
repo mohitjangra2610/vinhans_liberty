@@ -584,8 +584,8 @@ function ContactBlock() {
           <div className="rounded-2xl border border-border bg-white p-6 sm:p-10 shadow-sm text-center">
             <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full ring-2 ring-gold-accent/20 mx-auto mb-4 overflow-hidden">
               <Image
-                src="/pk.png"
-                alt="Prasanth Kollaikal"
+                src="/pratyusha.png"
+                alt="Pratyusha R"
                 width={96}
                 height={96}
                 className="w-full h-full object-cover"
@@ -593,7 +593,7 @@ function ContactBlock() {
             </div>
 
             <h3 className="text-lg sm:text-xl font-semibold text-navy mb-1">
-              Prasanth Kollaikal (PK)
+              Pratyusha R
             </h3>
             <p className="text-gold-accent text-sm font-medium">
               Chief Financial Officer
@@ -613,7 +613,7 @@ function ContactBlock() {
                     href="tel:+13176020574"
                     className="text-xs sm:text-sm text-muted-foreground hover:text-navy transition-colors text-center block"
                   >
-                    +1 (317) 602-0574
+                    +1(972)654-5335
                   </a>
                 </div>
               </div>
@@ -625,10 +625,10 @@ function ContactBlock() {
                     Email
                   </p>
                   <a
-                    href="mailto:pk@americanwealthcorp.com"
+                    href="mailto:Pr@vinhansliberty.com"
                     className="text-xs sm:text-sm text-muted-foreground hover:text-navy transition-colors text-center block"
                   >
-                    pk@americanwealthcorp.com
+                    Pr@vinhansliberty.com
                   </a>
                 </div>
               </div>

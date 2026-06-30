@@ -43,11 +43,11 @@ export default function Contact() {
                 Send an email to us
               </p>
               <p className="text-sm font-normal text-muted-foreground">
-                empowerme@americanwealthcorp.com
+                Pr@vinhansliberty.com
               </p>
 
               <Link
-                href="mailto:empowerme@americanwealthcorp.com"
+                href="mailto:Pr@vinhansliberty.com"
                 className="mt-5 inline-flex items-center gap-2 text-xs font-medium text-primary sm:mt-7 sm:text-sm"
               >
                 <span>Send an email</span>
@@ -67,7 +67,7 @@ export default function Contact() {
                 Whatsapp us
               </p>
               <p className="text-sm font-normal text-muted-foreground">
-                (317) 602-0574
+                +1(972)654-5335
               </p>
 
               <Link
@@ -87,7 +87,7 @@ export default function Contact() {
                 Call Us
               </p>
               <p className="text-sm font-normal text-muted-foreground">
-                (317) 602-0574
+                +1(972)654-5335
               </p>
 
               <Link

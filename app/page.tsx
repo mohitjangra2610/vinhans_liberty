@@ -22,7 +22,7 @@ export default function Page() {
             {/* Left: Text */}
             <div className="flex flex-col gap-6 justify-center">
               <h1 className="text-3xl sm:text-6xl md:text-5xl font-bold leading-tight text-foreground">
-                Elevate Your Financial Future
+                Protect, Build & Preserve
               </h1>
 
               <p className="text-lg sm:text-xl leading-relaxed text-muted-foreground">

@@ -44,10 +44,10 @@ export function Footer() {
           </nav>
 
           <a
-            href="mailto:info@amaricanwealthcrop.com"
+            href="mailto:Pr@vinhansliberty.com"
             className="text-xs text-white/80 transition hover:text-white"
           >
-            empowerme@americanwealthcorp.com
+            Pr@vinhansliberty.com
           </a>
         </div>
 

@@ -157,8 +157,8 @@ Total Issues Found: 148
 ## 2. Hardcoded Text / Strings
 
 ### Duplicated strings across 3+ files (CRITICAL)
-- **"empowerme@americanwealthcorp.com"** — Hardcoded in Footer.tsx:50, services/page.tsx:38, partners/page.tsx:35, contact/page.tsx:36 → Should be env var `NEXT_PUBLIC_CONTACT_EMAIL`
-- **"(317)602-0574" / "+1 (317) 602-0574"** — Hardcoded in EntrepreneursPageUI.tsx:677, services/page.tsx:61,79, partners/page.tsx:58,77, contact/page.tsx:60,80 → Should be env var `NEXT_PUBLIC_CONTACT_PHONE`
+- **"Pr@vinhansliberty.com"** — Hardcoded in Footer.tsx:50, services/page.tsx:38, partners/page.tsx:35, contact/page.tsx:36 → Should be env var `NEXT_PUBLIC_CONTACT_EMAIL`
+- **"(317)602-0574" / "+1(972)654-5335"** — Hardcoded in EntrepreneursPageUI.tsx:677, services/page.tsx:61,79, partners/page.tsx:58,77, contact/page.tsx:60,80 → Should be env var `NEXT_PUBLIC_CONTACT_PHONE`
 - **"Schedule a Call" / "Schedule a Strategy Session"** — Appears in multiple files with slight variations → Should be a shared constant
 
 ### By File

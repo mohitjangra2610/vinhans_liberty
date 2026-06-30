@@ -13,8 +13,8 @@ describe("SITE_CONFIG", () => {
   it("uses default fallback values when env vars are not set", async () => {
     const { SITE_CONFIG } = await import("@/lib/constants/content")
     expect(SITE_CONFIG.name).toBe("Vinhans Liberty")
-    expect(SITE_CONFIG.contactEmail).toBe("empowerme@americanwealthcorp.com")
-    expect(SITE_CONFIG.contactPhone).toBe("+1 (317) 602-0574")
+    expect(SITE_CONFIG.contactEmail).toBe("Pr@vinhansliberty.com")
+    expect(SITE_CONFIG.contactPhone).toBe("+1(972)654-5335")
     expect(SITE_CONFIG.tenantId).toBe("")
   })
 
