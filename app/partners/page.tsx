@@ -55,7 +55,7 @@ export default function Partners() {
               <p className="mt-2 text-lg font-semibold text-foreground">
                 Whatsapp us
               </p>
-              <p className="text-sm font-normal text-muted-foreground">(317)602-0574</p>
+              <p className="text-sm font-normal text-muted-foreground">+1(972)654-5335</p>
 
               <Link
                 href="https://wa.me/13176020574"
@@ -73,7 +73,7 @@ export default function Partners() {
               <p className="mt-2 text-lg font-semibold text-foreground">
                 Call Us
               </p>
-              <p className="text-sm font-normal text-muted-foreground">(317)602-0574</p>
+              <p className="text-sm font-normal text-muted-foreground">+1(972)654-5335</p>
 
               <Link
                 href="tel:+13176020574"
