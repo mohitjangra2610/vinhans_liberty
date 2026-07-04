@@ -3,6 +3,7 @@ import type { TeamInsert } from "@/type/supabase";
 interface SubmitTeamFormResponse {
   success: boolean;
   error?: string;
+  emailError?: string;
 }
 
 export type TeamFormPayload = Omit<

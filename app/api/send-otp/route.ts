@@ -19,7 +19,7 @@ export async function POST(req: Request) {
     .setExpirationTime("10m")
     .sign(SECRET);
 
-  await resend.emails.send({
+  const { data, error } = await resend.emails.send({
     from: "noreply@vinhansliberty.com",
     to: email,
     subject: "Your Verification Code",
@@ -29,7 +29,7 @@ export async function POST(req: Request) {
       
       <div style="background:#0a1628;padding:28px 32px;display:flex;align-items:center;gap:12px;">
         <div style="width:36px;height:36px;background:#D3AF37;border-radius:4px;display:inline-flex;align-items:center;justify-content:center;">
-          <img src="https://vinhansliberty.com/aws_icon.svg" width="40" height="40" alt="VL" style="display:block;" />
+          <img src="https://vinhansliberty.com/vl_icon.svg" width="40" height="40" alt="VL" style="display:block;" />
         </div>
         <div style="display:inline-block;margin-left:12px;">
           <p style="color:#ffffff;font-size:15px;font-weight:600;margin:0;letter-spacing:0.3px;">Vinhans Liberty</p>
@@ -69,6 +69,11 @@ export async function POST(req: Request) {
   </div>
 `,
   });
+
+  if (error) {
+    console.error("Resend send-otp error:", error);
+    return NextResponse.json({ error: error.message || "Failed to send OTP email" }, { status: 500 });
+  }
 
   return NextResponse.json({ token });
 }

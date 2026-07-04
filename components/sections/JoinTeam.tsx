@@ -132,11 +132,14 @@ export function JoinTeam() {
       const verifyData = await verifyRes.json();
       if (!verifyRes.ok) throw new Error(verifyData.error || "Invalid OTP");
 
-      await submitTeamForm(form);
+      const result = await submitTeamForm(form);
 
       setSuccess(true);
       setShowOtpModal(false);
       setForm({ full_name: "", email: "", phone: "", message: "" });
+      if (result.emailError) {
+        setError(result.emailError);
+      }
     } catch (err) {
       setOtpError(err instanceof Error ? err.message : "Verification failed");
     } finally {

@@ -65,6 +65,7 @@ export default function LeadForm() {
   const [submitError, setSubmitError] = useState("");
   const [fetchError, setFetchError] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [emailWarning, setEmailWarning] = useState("");
 
   useEffect(() => {
     let cancelled = false;
@@ -153,6 +154,9 @@ export default function LeadForm() {
       if (!res.ok) throw new Error(data.error || "Submission failed");
       setSubmitted(true);
       setShowOtpModal(false);
+      if (data.emailError) {
+        setEmailWarning(data.emailError);
+      }
     } catch (err) {
       setSubmitError(err instanceof Error ? err.message : "Submission failed");
     }
@@ -181,6 +185,11 @@ export default function LeadForm() {
           request and will get back to you with a personalized quotation as soon
           as possible.
         </p>
+        {emailWarning && (
+          <p className="mt-4 text-sm text-amber-600 bg-amber-50 border border-amber-200 rounded-lg px-4 py-3">
+            {emailWarning}
+          </p>
+        )}
       </div>
     );
   }
