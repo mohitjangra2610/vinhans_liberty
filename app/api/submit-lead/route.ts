@@ -71,7 +71,7 @@ export async function POST(req: Request) {
             </div>
             <div style="border-left:3px solid #D3AF37;padding-left:14px;margin-bottom:28px;">
               <p style="font-size:13px;color:#666;margin:0;line-height:1.6;">
-Thank you for taking the time to apply. We truly appreciate your interest and effort. A member of our recruitment team will review your application and reach out with the next steps. Please keep an eye on your inbox for our email. This is an automated message, so there's no need to reply.              </p>
+We truly appreciate your interest and effort. A member of our team will review your application and reach out with the next steps. Please keep an eye on your inbox for our email. This is an automated message, so there's no need to reply.</p>
             </div>
             <hr style="border:none;border-top:1px solid #eee;margin:0 0 20px;" />
             <p style="font-size:12px;color:#aaa;margin:0;line-height:1.6;">
